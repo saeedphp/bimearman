@@ -1,0 +1,152 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  direction: rtl;
+  text-align: right;
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-display: swap;
+  src: url(../public/font/eot/PinkSans.eot?#iefix) format('embedded-opentype'),
+  url(../public/font/ttf/PinkSans.ttf) format('truetype'),
+  url(../public/font/woff/PinkSans.woff) format('woff'),
+  url(../public/font/woff2/PinkSans.woff2) format('woff2');
+}
+
+body *, body :after, body :before, body :hover {
+  transition: .4s;
+}
+
+a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time{
+  font-family: IRANSans;
+}
+
+span{
+  position: relative !important;
+}
+
+img{
+  position: unset !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: unset !important;
+  max-width: unset !important;
+  min-height: unset !important;
+  max-height: unset !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header ul > li > a.has-children{
+  position: relative;
+}
+
+header ul > li > a.has-children::before{
+  content: "";
+  position: absolute;
+  background: url(../public/images/down-arrow.png) no-repeat;
+  width: 13px;
+  height: 7px;
+  display: inline-block;
+}
+
+/*defined classes*/
+
+.txtCenter{
+  text-align: center;
+}
+
+.txtRight{
+  text-align: right;
+}
+
+.txtLeft{
+  text-align: left;
+}
+
+.row{
+  width: 100%;
+}
+
+.col-12{
+  width: 100%;
+}
+
+.col-10{
+  width: 80%;
+}
+
+.col-9{
+  width: 70%;
+}
+
+.col-8{
+  width: 60%;
+}
+
+.col-6{
+  width: 50%;
+}
+
+.col-4{
+  width: 25%;
+}
+
+.col-3{
+  width: 30%;
+}
+
+.col-2{
+  width: 20%;
+}
+
+.col-1{
+  width: 10%;
+}
+
+/*defined classes*/
+
+.nav{
+  background: #e9e9e9;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  right: -100%;
+  transition: 850ms;
+  z-index: 6;
+  box-shadow: 4px 6px 15px #585454;
+}
+
+.nav ul{
+  width: 100%;
+  height: 100%;
+}
+
+.nav.active{
+  right: 0;
+  transition: .7s;
+}

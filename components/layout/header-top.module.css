@@ -1,0 +1,95 @@
+.header-row__top{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 4rem;
+}
+
+.header-row__top .item{
+    display: flex;
+    align-items: center;
+}
+
+.header-row__top .logo{
+    justify-content: flex-start;
+}
+
+.header-row__top .slogan{
+    justify-content: center;
+}
+
+.header-row__top .slogan .title{
+    text-align: center;
+    color: #6F2A82;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.header-row__top .btnLogin{
+    justify-content: flex-end;
+}
+
+.header-row__top .btnLogin .search{
+    background: #E2D4E6;
+    border-radius: 50%;
+    padding: 0.5rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.header-row__top .btnLogin .signIn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #E2D4E6;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.header-row__top .btnLogin .signIn span{
+    color: #6F2A82;
+}
+
+@media (max-width: 768px) {
+    .header-row__top{
+        padding: 1rem .5rem;
+    }
+    .header-row__top .item{
+        width: 33%;
+    }
+    .header-row__top .logo{
+        width: 33%;
+    }
+    .header-row__top .slogan{
+        width: 33%;
+    }
+    .header-row__top .logo span{
+        width: 70px !important;
+    }
+    .header-row__top .slogan .title{
+        font-size: .7rem;
+    }
+    .header-row__top .slogan .title{
+        font-size: .7rem;
+    }
+    .header-row__top .btnLogin .signIn svg{
+        width: 16px;
+    }
+    .header-row__top .btnLogin .search{
+        width: 25px;
+        height: 25px;
+        margin-left: .5rem;
+    }
+    .header-row__top .btnLogin .signIn{
+        padding: .1rem;
+    }
+    .header-row__top .btnLogin .signIn span{
+        font-size: .5rem;
+    }
+}

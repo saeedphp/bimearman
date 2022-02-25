@@ -1,0 +1,52 @@
+import styles from "./header-bottom.module.css";
+import Link from "next/link";
+import HeaderEarth from "../icons/header-earth";
+import HeaderArrow from "../icons/header-arrow";
+import {getAllMenu} from "../../data/menu";
+import MobileMenu from "./mobile-menu";
+
+const HeaderBottom = () => {
+
+    const menuItems = getAllMenu();
+
+    return (
+        <div className={styles['header-bottom']}>
+            <div className={styles.navigation}>
+                <nav>
+                    <ul>
+                        {menuItems.map((menuItem) => (
+                            <li key={menuItem.id}>
+                                <Link href={`/${menuItem.link}`}>
+                                    <a className={menuItem.children && 'has-children'}>
+                                        {menuItem.title}
+                                    </a>
+                                </Link>
+                                {menuItem.children && <ul className={styles.subMenu}>
+                                    {menuItem.children.map((item,index) => (
+                                        <li key={index}>
+                                            {item.title}
+                                        </li>
+                                    ))}
+                                </ul>}
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
+            <div className={styles['mobile-menu']}>
+                <MobileMenu />
+            </div>
+            <div className={styles.service}>
+                <div className={styles.card}>
+                    <HeaderEarth />
+                    <span>
+                                خدمات الکترونیکی
+                            </span>
+                    <HeaderArrow />
+                </div>
+            </div>
+        </div>
+    )
+};
+
+export default HeaderBottom;
