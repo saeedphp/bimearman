@@ -68,6 +68,8 @@ header ul > li > a.has-children::before{
   width: 13px;
   height: 7px;
   display: inline-block;
+  left: -19px;
+  top: 50%;
 }
 
 /*defined classes*/

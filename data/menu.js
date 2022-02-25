@@ -10,11 +10,11 @@ const DUMMY_DATA = [
             },
             {
                 link: '',
-                title: 'آیتم یک',
+                title: 'آیتم دو',
             },
             {
                 link: '',
-                title: 'آیتم یک',
+                title: 'آیتم سه',
             },
         ]
     },
@@ -25,7 +25,11 @@ const DUMMY_DATA = [
         children: [
             {
                 link: '',
-                title: 'آیتم دو',
+                title: 'محصول یک',
+            },
+            {
+                link: '',
+                title: 'محصول دو',
             },
         ]
     },
@@ -33,21 +37,45 @@ const DUMMY_DATA = [
         id: 'm3',
         title: 'شبکه فروش',
         link: '',
+        children: [
+            {
+                link: '',
+                title: 'شبکه فروش یک',
+            },
+        ],
     },
     {
         id: 'm4',
         title: 'قوانین و مقررات',
         link: '',
+        children: [
+            {
+                link: '',
+                title: 'قوانین یک',
+            },
+        ],
     },
     {
         id: 'm5',
         title: 'روابط عمومی',
         link: '',
+        children: [
+            {
+                link: '',
+                title: 'روابط عمومی یک'
+            },
+        ],
     },
     {
         id: 'm6',
         title: 'تماس با ما',
         link: '',
+        children: [
+            {
+                link: '',
+                title: 'ارتباط با ما',
+            },
+        ],
     },
     {
         id: 'm7',
