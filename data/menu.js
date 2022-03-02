@@ -50,8 +50,8 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
-                link: '',
-                title: 'قوانین یک',
+                link: 'rules/brochure',
+                title: 'بروشور',
             },
         ],
     },

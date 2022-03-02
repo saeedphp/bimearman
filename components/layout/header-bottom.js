@@ -24,7 +24,11 @@ const HeaderBottom = () => {
                                 {menuItem.children && <ul className={styles.subMenu}>
                                     {menuItem.children.map((item,index) => (
                                         <li key={index}>
-                                            {item.title}
+                                            <Link href={`/${item.link}`}>
+                                                <a>
+                                                    {item.title}
+                                                </a>
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>}
