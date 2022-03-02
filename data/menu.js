@@ -50,8 +50,14 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
+                id: 'm4-1',
                 link: 'rules/brochure',
                 title: 'بروشور',
+            },
+            {
+                id: 'm4-2',
+                link: 'rules/terms',
+                title: 'شرایط عضویت در هیات مدیره',
             },
         ],
     },
