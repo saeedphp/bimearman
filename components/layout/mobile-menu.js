@@ -8,10 +8,15 @@ import MenuCross from "../icons/menu-cross";
 const HamburMenu = () => {
 
     const [showMenu, setShowMenu] = useState(false);
+    const [submenu, setSubmenu] = useState(false);
 
     const showSidebar = () => {
         setShowMenu(!showMenu);
     };
+
+    const showSubmenu = () => {
+        setSubmenu(!submenu);
+    }
 
     const menuItems = getAllMenu();
 
@@ -28,10 +33,17 @@ const HamburMenu = () => {
                     {menuItems.map((menuItem) => (
                         <li key={menuItem.id}>
                             <Link href={`/${menuItem.link}`}>
-                                <a>
+                                <a onClick={menuItem.children && showSubmenu} className={menuItem.children && 'has-children'}>
                                     {menuItem.title}
                                 </a>
                             </Link>
+                            {menuItem.children && <ul className={submenu ? 'submenu active' : 'submenu'}>
+                                {menuItem.children.map((item,index) => (
+                                    <li key={index}>
+                                        {item.title}
+                                    </li>
+                                ))}
+                            </ul>}
                         </li>
                     ))}
                 </ul>

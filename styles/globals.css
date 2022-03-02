@@ -19,8 +19,9 @@ body *, body :after, body :before, body :hover {
   transition: .4s;
 }
 
-a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time{
+a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time,input,textarea{
   font-family: IRANSans;
+  font-style: normal;
 }
 
 span{
@@ -35,6 +36,16 @@ img{
   max-width: unset !important;
   min-height: unset !important;
   max-height: unset !important;
+}
+
+input:focus{
+  border: unset;
+  outline: unset;
+}
+
+textarea:focus{
+  border: unset;
+  outline: unset;
 }
 
 a {
@@ -151,4 +162,17 @@ header ul > li > a.has-children::before{
 .nav.active{
   right: 0;
   transition: .7s;
+}
+
+.submenu{
+  position: absolute;
+  opacity: 0;
+}
+
+.submenu.active{
+  opacity: 1;
+}
+
+address{
+  font-style: normal;
 }

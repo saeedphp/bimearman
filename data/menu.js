@@ -69,7 +69,7 @@ const DUMMY_DATA = [
     {
         id: 'm6',
         title: 'تماس با ما',
-        link: '',
+        link: 'contactus',
         children: [
             {
                 link: '',
