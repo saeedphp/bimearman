@@ -1,0 +1,64 @@
+.suggestion{
+    position: relative;
+    width: unset !important;
+    height: auto;
+    margin: 2rem 4rem;
+    border-top: 19px solid #6F2A82;
+    padding: 2rem !important;
+}
+
+.suggestion h2{
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    color: #6F2A82;
+    margin: 0;
+}
+
+.suggestion form{
+    width: 100%;
+    padding: 2rem 4rem;
+}
+
+.suggestion .controls{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.suggestion .controls > div{
+    width: 48%;
+}
+
+.suggestion .button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .suggestion{
+        margin: 1rem .5rem;
+    }
+    .suggestion form{
+        padding: 1rem .5rem;
+    }
+    .suggestion h2{
+        font-size: 1rem;
+    }
+    .suggestion .controls{
+        flex-wrap: wrap;
+    }
+    .suggestion .controls > div{
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .suggestion h2{
+        font-size: 1rem;
+    }
+}
