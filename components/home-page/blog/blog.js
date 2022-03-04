@@ -45,7 +45,7 @@ const Blog = () => {
             </div>
 
             <div className={toggle === 1 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {allBlogs.map((allBlog) => (
+                {allBlogs.slice(0,3).map((allBlog) => (
                     <BlogItem
                         key={allBlog.id}
                         title={allBlog.title}
@@ -59,7 +59,7 @@ const Blog = () => {
             </div>
 
             <div className={toggle === 2 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {events.map((event) => (
+                {events.slice(0,3).map((event) => (
                     <BlogItem
                         key={event.id}
                         title={event.title}
@@ -73,7 +73,7 @@ const Blog = () => {
             </div>
 
             <div className={toggle === 3 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {news.map((item) => (
+                {news.slice(0,3).map((item) => (
                     <BlogItem
                         key={item.id}
                         title={item.title}

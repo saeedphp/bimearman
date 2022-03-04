@@ -1,0 +1,49 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main > div {
+    margin: 1rem !important;
+    width: 28%;
+}
+
+.main > div a {
+    font-size: .8rem;
+    min-height: unset;
+}
+
+.main > div p {
+    text-align: justify;
+    font-size: .7rem;
+}
+
+.main div time {
+    font-size: .7rem;
+}
+
+.main div > div > a {
+    font-size: .7rem;
+    padding: .5rem 1rem;
+}
+
+.main > div > div:first-child a {
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: .3rem .5rem;
+    font-size: .7rem;
+}
+
+
+@media (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+
+    .main > div {
+        width: 100%;
+    }
+}
