@@ -176,3 +176,21 @@ header ul > li > a.has-children::before{
 address{
   font-style: normal;
 }
+
+.faqTitle.active{
+  background: #6F2A82 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 8px 8px 0 0;
+}
+
+.faqTitle.active h3{
+  color: #fff !important;
+}
+
+.faqTitle.active .icon svg path,circle{
+  fill: #fff;
+}
+
+.faqItem.active{
+  max-height: max-content !important;
+}
