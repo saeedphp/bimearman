@@ -217,6 +217,23 @@ address{
   margin: auto;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=radio]{
+  accent-color: #8E24AA;
+}
+
+
+
 @media (max-width: 768px){
   .rules-tab li.active::before{
     width: 16px;
