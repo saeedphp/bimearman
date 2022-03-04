@@ -16,7 +16,7 @@ const Sidebar = () => {
                 </h2>
                 <ul>
                     {sidebarBlogs.slice(0,3).map((sidebarBlog) => (
-                        <li className={styles.items}>
+                        <li key={sidebarBlog.id} className={styles.items}>
                             <div className={styles['post-wrapper']}>
                                 <div className={styles.image}>
                                     <Link href={sidebarBlog.id}>
