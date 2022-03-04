@@ -19,9 +19,7 @@ const Sidebar = () => {
                         <li key={sidebarBlog.id} className={styles.items}>
                             <div className={styles['post-wrapper']}>
                                 <div className={styles.image}>
-                                    <Link href={sidebarBlog.id}>
-                                        <Image src={`/${sidebarBlog.image}`} alt={sidebarBlog.title} layout={"fill"} />
-                                    </Link>
+                                    <Image src={`/${sidebarBlog.image}`} alt={sidebarBlog.title} layout={"fill"} />
                                 </div>
                                 <div className={styles.info}>
                                     <Link href={sidebarBlog.id}>
