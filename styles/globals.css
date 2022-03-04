@@ -194,3 +194,33 @@ address{
 .faqItem.active{
   max-height: max-content !important;
 }
+
+.rules-tab li.active{
+  background: #6F2A82;
+  position: relative;
+  color: #fff;
+}
+
+.rules-tab li.active::before{
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: block;
+  border-radius: 4px;
+  transform: rotate(45deg);
+  bottom: -0.5rem;
+  z-index: 9;
+  background: #6f2a82;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+
+@media (max-width: 768px){
+  .rules-tab li.active::before{
+    width: 16px;
+    height: 16px;
+    bottom: -0.4rem;
+  }
+}
