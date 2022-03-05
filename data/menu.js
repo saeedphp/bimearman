@@ -39,8 +39,14 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
-                link: '',
-                title: 'شبکه فروش یک',
+                id: 'm3-1',
+                link: 'rules',
+                title: 'قوانین و مقررات',
+            },
+            {
+                id: 'm3-2',
+                link: 'representation',
+                title: 'اخذ نمایندگی',
             },
         ],
     },
@@ -58,6 +64,11 @@ const DUMMY_DATA = [
                 id: 'm4-2',
                 link: 'rules/terms',
                 title: 'شرایط عضویت در هیات مدیره',
+            },
+            {
+                id: 'm4-3',
+                link: 'rules/generalconditions',
+                title: 'شرایط عمومی بیمه نامه',
             },
         ],
     },

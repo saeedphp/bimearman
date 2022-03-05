@@ -7,11 +7,11 @@ import React from "react";
 
 const BlogItem = (props) => {
     
-    const {id, title, description, category, image, date, link} = props;
+    const {id, title, description, category, image, date} = props;
     
     const excerpt = description.slice(0,137) + '...';
     const imgPath = `/${image}`;
-    const postLink = `/blog/${id}`;
+    const postLink = `blog/${id}`;
     const humanReadableTime = new Date(date).toLocaleDateString('fa-IR', {
         day: 'numeric',
         month: 'long',

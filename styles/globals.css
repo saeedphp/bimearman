@@ -232,7 +232,138 @@ input[type=radio]{
   accent-color: #8E24AA;
 }
 
+.blog-detail{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 2rem 4rem;
+}
 
+.blog-detail_main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.blog-detail__form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-detail__form .title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.blog-detail__form .title svg{
+  margin-left: 1rem;
+}
+
+.blog-detail__form .title p{
+  position: relative;
+  width: 100%;
+}
+
+.blog-detail__form .title p::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 87%;
+  border-bottom: 1px dashed #E5E5E5;
+  bottom: 0.5rem;
+}
+
+#id-info{
+  display: flex;
+  justify-content: space-between;
+}
+
+#id-info > div{
+  width: 48%;
+}
+
+.blog-detail__form button{
+  width: 50%;
+  margin-top: 1rem;
+}
+
+#related-posts{
+  width: 100%;
+  position: relative;
+  display: flex;
+  padding: 2rem 4rem;
+  flex-direction: column;
+}
+
+.blog-detail__related{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-detail__related .title{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.blog-detail__related .title svg{
+  margin-left: 1rem;
+}
+
+.blog-detail__related .title p{
+  position: relative;
+  width: 100%;
+}
+
+.blog-detail__related .title p::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 87%;
+  border-bottom: 1px dashed #E5E5E5;
+  bottom: 0.5rem;
+}
+
+.posts-related{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posts-related > div{
+  width: 22%;
+}
+
+.posts-related > div > a{
+  font-size: .8rem;
+  margin: .5rem 0;
+  min-height: unset;
+}
+
+.posts-related > div > p{
+  font-size: .7rem;
+  margin: .5rem 0;
+}
+
+.posts-related > div time{
+  font-size: .7rem;
+}
+
+.posts-related > div a{
+  padding: .3rem 1.2rem;
+  font-size: .7rem;
+}
 
 @media (max-width: 768px){
   .rules-tab li.active::before{

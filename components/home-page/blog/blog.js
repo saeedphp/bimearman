@@ -48,6 +48,7 @@ const Blog = () => {
                 {allBlogs.slice(0,3).map((allBlog) => (
                     <BlogItem
                         key={allBlog.id}
+                        id={allBlog.id}
                         title={allBlog.title}
                         description={allBlog.description}
                         category={allBlog.category}
@@ -62,6 +63,7 @@ const Blog = () => {
                 {events.slice(0,3).map((event) => (
                     <BlogItem
                         key={event.id}
+                        id={event.id}
                         title={event.title}
                         description={event.description}
                         category={event.category}
@@ -76,6 +78,7 @@ const Blog = () => {
                 {news.slice(0,3).map((item) => (
                     <BlogItem
                         key={item.id}
+                        id={item.id}
                         title={item.title}
                         description={item.description}
                         category={item.category}

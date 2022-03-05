@@ -29,7 +29,11 @@ const Sidebar = () => {
                                     </Link>
                                     <time>
                                         <Calendar/>
-                                        {sidebarBlog.date}
+                                        {new Date(sidebarBlog.date).toLocaleDateString('fa-IR',{
+                                          day: 'numeric',
+                                          month: 'long',
+                                          year: 'numeric',
+                                        })}
                                     </time>
                                 </div>
                             </div>
@@ -37,6 +41,39 @@ const Sidebar = () => {
                     ))}
                 </ul>
             </div>
+
+            <div className={styles.wrapper}>
+                <h2 className={styles.title}>
+                    پر بازدیدترین اخبار
+                </h2>
+                <ul>
+                    {sidebarBlogs.slice(0,3).reverse().map((sidebarBlog) => (
+                        <li key={sidebarBlog.id} className={styles.items}>
+                            <div className={styles['post-wrapper']}>
+                                <div className={styles.image}>
+                                    <Image src={`/${sidebarBlog.image}`} alt={sidebarBlog.title} layout={"fill"} />
+                                </div>
+                                <div className={styles.info}>
+                                    <Link href={sidebarBlog.id}>
+                                        <a className={styles.title}>
+                                            {sidebarBlog.title}
+                                        </a>
+                                    </Link>
+                                    <time>
+                                        <Calendar/>
+                                        {new Date(sidebarBlog.date).toLocaleDateString('fa-IR',{
+                                            day: 'numeric',
+                                            month: 'long',
+                                            year: 'numeric',
+                                        })}
+                                    </time>
+                                </div>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
         </div>
     );
 };
