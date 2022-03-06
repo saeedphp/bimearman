@@ -16,7 +16,6 @@ const BlogItems = () => {
                     description={allBlog.description}
                     image={allBlog.image}
                     date={allBlog.date}
-                    link={allBlog.link}
                     category={allBlog.category}
                 />
             ))}
