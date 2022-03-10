@@ -86,8 +86,6 @@ const RepresentationForm = () => {
 
             <div className={`${styles.controls} ${styles.txtControls}`}>
 
-
-
             </div>
 
             <Button>

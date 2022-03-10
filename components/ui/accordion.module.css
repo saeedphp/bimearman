@@ -19,6 +19,8 @@
 
 .items .faq-question .icon-part svg{
     margin-left: 1rem;
+    position: relative;
+    z-index: 2;
 }
 
 .items .faq-question h3{

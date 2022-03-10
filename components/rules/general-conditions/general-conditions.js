@@ -3,16 +3,12 @@ import styles from './general-conditions.module.css';
 import PageHeader from "../../ui/page-header";
 import Card from "../../ui/card";
 import Title from "../../ui/title";
-import FaqItem from "../../icons/faq-item";
 import {getAllConditions} from "../../../data/conditions";
-import DownArrow from "../../icons/down-arrow";
 import GeneralConditionsItems from "./general-conditions-items";
 
 const GeneralConditions = () => {
 
     const allConditions = getAllConditions();
-
-
 
     return (
         <Fragment>

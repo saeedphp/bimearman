@@ -181,6 +181,22 @@ address{
   background: #6F2A82 !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
   border-radius: 8px 8px 0 0;
+  position: relative;
+  transition: all .7s;
+}
+
+.faqTitle.active::before{
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  bottom: -11px;
+  right: 2rem;
+  border-radius: 8px;
+  background: #6F2A82;
+  transform: rotate(45deg);
+  z-index: 1;
 }
 
 .faqTitle.active h3{
@@ -191,8 +207,8 @@ address{
   fill: #fff;
 }
 
-.faqItem.active{
-  max-height: max-content !important;
+.faq-answer.active{
+  max-height: 300px !important;
 }
 
 .rules-tab li.active{

@@ -4,10 +4,16 @@ import Intro from "../components/home-page/intro/intro";
 import Insurance from "../components/home-page/insurance/insurance";
 import AllInsurance from "../components/home-page/all-insurance/all-insurance";
 import Blog from "../components/home-page/blog/blog";
+import Head from "next/head";
 
 const HomePage = () => {
     return (
         <Fragment>
+            <Head>
+                <title>بیمه آرمان-آرمان ما، آرمان شما</title>
+                <meta name="description" content="Arman INs Site" />
+                <link rel="icon" href="/public/favicon.ico" />
+            </Head>
             <Banner/>
             <Intro/>
             <Insurance/>
