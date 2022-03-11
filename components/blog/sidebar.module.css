@@ -49,7 +49,6 @@
 
 .sidebar .wrapper .items .post-wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -91,4 +90,10 @@
 
 .sidebar .wrapper .items .post-wrapper .info time svg path{
     fill: #E40F7E;
+}
+
+@media (max-width: 768px) {
+    .sidebar{
+        width: 100%;
+    }
 }

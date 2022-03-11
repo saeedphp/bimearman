@@ -9,7 +9,7 @@
 @media (max-width: 768px) {
     .blog{
         padding: 1rem .5rem;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .blog .sidebar{
         width: 100%;

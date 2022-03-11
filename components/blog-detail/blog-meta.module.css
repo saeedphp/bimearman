@@ -28,3 +28,9 @@
 .card svg{
     margin-left: 1rem;
 }
+
+@media (max-width: 768px) {
+    .card{
+        padding: .5rem;
+    }
+}

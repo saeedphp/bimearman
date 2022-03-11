@@ -60,7 +60,29 @@ const BlogDetailPage = () => {
                         <form>
                             <div id="id-info">
 
+                                <div className="controls">
+                                    <label htmlFor="name">
+                                        نام
+                                    </label>
+                                    <input id="name" name="name" type="text"/>
+                                </div>
 
+                                <div className="controls">
+                                    <label htmlFor="family">
+                                        خانوادگی
+                                    </label>
+                                    <input id="family" name="family" type="text"/>
+                                </div>
+
+                            </div>
+
+                            <div className="controls">
+                                <label htmlFor="comment">
+                                    نظر خود را بنویسید ...
+                                </label>
+                                <textarea id="comment" name="comment">
+
+                                </textarea>
                             </div>
 
                             <Button onClick={submitHandler}>

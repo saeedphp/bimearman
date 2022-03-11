@@ -1,0 +1,65 @@
+.intro{
+    position: relative;
+    height: auto;
+    padding: 2rem 4rem;
+}
+
+.intro .init{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .init > div{
+    width: 100%;
+    padding: 3rem;
+}
+
+.intro .init .imgWrapper span{
+    filter: drop-shadow(1px 0px 24px #C4C4C4);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.intro .init .info .title{
+    color: #6F2A82;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: right;
+    position: relative;
+    padding-right: 5rem;
+}
+
+.intro .init .info .title::before{
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    display: inline-block;
+    right: 0;
+    background: #e2d4e6;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.intro .init .info .title::after{
+    content: "";
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    right: .8rem;
+    top: 14px;
+    background: linear-gradient(49.46deg, rgba(228, 15, 126, 0.94) 0.08%, rgba(111, 42, 130, 0.94) 143.54%);;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.intro .init .info .desc{
+    text-align: justify;
+    color: #000;
+    line-height: 3rem;
+    font-size: 20px;
+}

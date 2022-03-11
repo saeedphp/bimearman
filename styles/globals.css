@@ -19,7 +19,7 @@ body *, body :after, body :before, body :hover {
   transition: .4s;
 }
 
-a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time,input,textarea{
+a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time,input,textarea,select,option{
   font-family: IRANSans;
   font-style: normal;
 }
@@ -297,6 +297,43 @@ input[type=radio]{
   bottom: 0.5rem;
 }
 
+.blog-detail__form .controls{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.blog-detail__form .controls label{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 31px;
+  text-align: right;
+  color: rgba(64, 60, 73, 0.92);
+  margin-bottom: .5rem;
+}
+
+.blog-detail__form .controls input{
+  width: 100%;
+  background: #FFFFFF;
+  border: 1px solid rgba(196, 196, 196, 0.58);
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: .8rem;
+}
+
+.blog-detail__form .controls textarea{
+  background: #FFFFFF;
+  border: 1px solid rgba(196, 196, 196, 0.58);
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 100%;
+  resize: none;
+  height: 180px;
+  padding: 1rem;
+}
+
+
 #id-info{
   display: flex;
   justify-content: space-between;
@@ -381,10 +418,45 @@ input[type=radio]{
   font-size: .7rem;
 }
 
+.paginate li a.active{
+  background: linear-gradient(81.13deg, #E40F7E -56.13%, #8E24AA 107.4%);
+  border-radius: 50%;
+  color: #fff;
+}
+
 @media (max-width: 768px){
   .rules-tab li.active::before{
     width: 16px;
     height: 16px;
     bottom: -0.4rem;
+  }
+  .blog-detail{
+    padding: 1rem .5rem;
+    flex-wrap: wrap;
+  }
+  .blog-detail_main{
+    width: 100%;
+    padding: 0 .5rem;
+  }
+  .blog-detail__form .title p::before{
+    width: 70%;
+  }
+  #id-info{
+    flex-wrap: wrap;
+  }
+  #id-info > div{
+    width: 100%;
+  }
+  #related-posts{
+    padding: 1rem .5rem;
+  }
+  .posts-related{
+    flex-wrap: wrap;
+  }
+  .posts-related > div{
+    width: 100%;
+  }
+  .blog-detail__related .title p::before{
+    width: 70%;
   }
 }

@@ -1,7 +1,15 @@
-.main {
+.card{
     display: flex;
     flex-wrap: wrap;
     width: 70%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
 }

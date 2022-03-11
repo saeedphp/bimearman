@@ -60,3 +60,12 @@
      line-height: 2.5rem;
      font-size: 1rem;
  }
+
+ @media (max-width: 768px) {
+     .purpleBg{
+         width: 100%;
+     }
+     .purpleBg h3{
+         font-size: .7rem;
+     }
+ }

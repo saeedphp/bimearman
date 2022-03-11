@@ -7,7 +7,6 @@
 
 .terms .info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -18,6 +17,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .terms .info .download {
@@ -37,4 +37,13 @@
     height: 70px;
     padding: .7rem;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .terms{
+        padding: 1rem .5rem;
+    }
+    .terms .info{
+        flex-wrap: wrap;
+    }
 }
