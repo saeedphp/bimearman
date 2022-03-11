@@ -424,6 +424,19 @@ input[type=radio]{
   color: #fff;
 }
 
+.productItem{
+  position: relative;
+}
+
+.productItem li.active{
+  color: #6F2A82 !important;
+  border-color: #E40F7E !important;
+}
+
+.productItem li.active svg path{
+  fill: #6F2A82 !important;
+}
+
 @media (max-width: 768px){
   .rules-tab li.active::before{
     width: 16px;

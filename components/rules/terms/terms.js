@@ -25,7 +25,7 @@ const Terms = () => {
                         </div>
                         <div className={styles.download}>
                             {allTerms.map((allTerm) => (
-                                <div key={allTerm.id} className={styles.items}>
+                                <div key={allTerm.id}>
                                     <a href={allTerm.link}>
                                         <DownloadCard>
                                             {allTerm.title}

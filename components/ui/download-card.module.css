@@ -1,3 +1,15 @@
+.wrapper{
+    background: #6F2A82;
+    backdrop-filter: blur(14.0509px);
+    width: 100%;
+    border-radius: 32px;
+    position: relative;
+    z-index: 1;
+    height: 70px;
+    padding: .7rem;
+    margin-bottom: 2rem;
+}
+
  .whiteBg {
     z-index: 2;
     background: #fff;
