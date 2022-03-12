@@ -5,16 +5,16 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
-                link: '',
-                title: 'آیتم یک',
+                link: 'about/vision',
+                title: 'چشم انداز های بیمه آرمان',
             },
             {
-                link: '',
-                title: 'آیتم دو',
+                link: 'about/personel',
+                title: 'پرسنل و اعضای بیمه آرمان',
             },
             {
-                link: '',
-                title: 'آیتم سه',
+                link: 'about/intro',
+                title: 'بیمه آرمان در یک نگاه',
             },
         ]
     },
@@ -24,12 +24,8 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
-                link: '',
-                title: 'محصول یک',
-            },
-            {
-                link: '',
-                title: 'محصول دو',
+                link: 'products/insurance',
+                title: 'بیمه اشخاص',
             },
         ]
     },
@@ -40,12 +36,12 @@ const DUMMY_DATA = [
         children: [
             {
                 id: 'm3-1',
-                link: 'rules',
+                link: 'salesnetwork/rules',
                 title: 'قوانین و مقررات',
             },
             {
                 id: 'm3-2',
-                link: 'representation',
+                link: 'salesnetwork/representation',
                 title: 'اخذ نمایندگی',
             },
         ],
@@ -78,8 +74,8 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
-                link: '',
-                title: 'روابط عمومی یک'
+                link: 'blog',
+                title: 'بلاگ'
             },
         ],
     },
@@ -87,17 +83,11 @@ const DUMMY_DATA = [
         id: 'm6',
         title: 'تماس با ما',
         link: 'contactus',
-        children: [
-            {
-                link: '',
-                title: 'ارتباط با ما',
-            },
-        ],
     },
     {
         id: 'm7',
         title: 'گزارشگری و افشای اطلاعات',
-        link: '',
+        link: 'reporting',
     },
 
 ];

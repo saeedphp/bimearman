@@ -6,7 +6,7 @@ import ContactForm from "./contact-form";
 const Contactus = () => {
     return (
         <>
-            <PageHeader />
+            <PageHeader title="تماس با ما" />
             <section className={styles.contactus}>
                 <div className={styles.mapWrapper}>
                     <iframe

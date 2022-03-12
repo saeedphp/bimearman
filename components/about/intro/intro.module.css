@@ -17,6 +17,21 @@
     padding: 3rem;
 }
 
+.intro .init .imgWrapperFirst{
+    position: relative;
+}
+
+.intro .init .imgWrapperFirst::before{
+    content: "";
+    position: absolute;
+    background: url(../../../public/images/blog-bullet.png) no-repeat;
+    right: -2rem;
+    bottom: 0;
+    width: 193px;
+    height: 193px;
+    display: block;
+}
+
 .intro .init .imgWrapper span{
     filter: drop-shadow(1px 0px 24px #C4C4C4);
     border-radius: 15px;
@@ -62,4 +77,55 @@
     color: #000;
     line-height: 3rem;
     font-size: 20px;
+}
+
+.intro .init .info .stat{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.intro .init .info .stat .items{
+    display: flex;
+    align-items: center;
+}
+
+.intro .init .info .stat .items .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.5rem;
+}
+
+.intro .init .info .stat .items .wrapper .numTitle{
+    background: linear-gradient(180deg, #6F2A82 0%, #E40F7E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.intro .init .info .stat .items .wrapper .number{
+    background: linear-gradient(180deg, #6F2A82 0%, #E40F7E 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+    text-align: left;
+    direction: ltr;
+}
+
+.intro .saham h2{
+    font-weight: 500;
+    font-size: 28px;
+    color: #6F2A82;
+    text-align: center;
+}
+
+.intro .saham > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro .singleImg{
+    width: auto !important;
 }

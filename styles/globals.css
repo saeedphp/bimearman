@@ -420,7 +420,6 @@ input[type=radio]{
 
 .paginate li a.active{
   background: linear-gradient(81.13deg, #E40F7E -56.13%, #8E24AA 107.4%);
-  border-radius: 50%;
   color: #fff;
 }
 
@@ -435,6 +434,25 @@ input[type=radio]{
 
 .productItem li.active svg path{
   fill: #6F2A82 !important;
+}
+
+.breadcrumb{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.breadcrumb ol{
+  display: flex;
+  width: 100%;
+}
+
+.breadcrumb ol li{
+  margin: 1rem;
+}
+
+.breadcrumb ol span{
+  margin: 1rem .2rem;
 }
 
 @media (max-width: 768px){

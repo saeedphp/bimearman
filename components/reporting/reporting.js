@@ -106,7 +106,6 @@ const Reporting = () => {
         } else {
             setNumberOfItemsToShown(numberOfItemsShown + 3);
         }
-
     };
 
     const itemsToShow = useMemo(() => {
