@@ -1,0 +1,32 @@
+.branch{
+    position: relative;
+    height: auto;
+    padding: 2rem 4rem;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.cities{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.map{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.map > div > svg path{
+    fill: rgba(207, 187, 212, 1);
+    stroke: #fff;
+}
