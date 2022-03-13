@@ -5,14 +5,17 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
+                id: 'm1-1',
                 link: 'about/vision',
                 title: 'چشم انداز های بیمه آرمان',
             },
             {
+                id: 'm1-2',
                 link: 'about/personel',
                 title: 'پرسنل و اعضای بیمه آرمان',
             },
             {
+                id: 'm1-3',
                 link: 'about/intro',
                 title: 'بیمه آرمان در یک نگاه',
             },
@@ -24,6 +27,7 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
+                id: 'm2-1',
                 link: 'products/insurance',
                 title: 'بیمه اشخاص',
             },
@@ -74,6 +78,7 @@ const DUMMY_DATA = [
         link: '',
         children: [
             {
+                id: 'm5-1',
                 link: 'blog',
                 title: 'بلاگ'
             },

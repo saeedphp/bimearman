@@ -165,12 +165,30 @@ header ul > li > a.has-children::before{
 }
 
 .submenu{
-  position: absolute;
-  opacity: 0;
+  position: relative;
+  overflow: hidden;
+  max-height: 0 !important;
+  transition: all .5s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.submenu li a{
+  font-size: .8rem !important;
+  padding-right: 2.2rem !important;
 }
 
 .submenu.active{
-  opacity: 1;
+  max-height: 300px !important;
+}
+
+.nav li a span.arrow{
+  display: flex;
+}
+
+.nav li a span.arrow.active{
+  transform: rotate(180deg);
 }
 
 address{

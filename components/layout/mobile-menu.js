@@ -4,6 +4,7 @@ import {getAllMenu} from "../../data/menu";
 import Link from "next/link";
 import HamburIcon from "../icons/hambur";
 import MenuCross from "../icons/menu-cross";
+import MenuArrow from "../icons/menu-arrow";
 
 const HamburMenu = () => {
 
@@ -18,6 +19,15 @@ const HamburMenu = () => {
         setSubmenu(!submenu);
     }
 
+    const [opened, setOpened] = useState(null);
+
+    const toggle = (id) => {
+        if (opened === id) {
+            return setOpened(null)
+        }
+        setOpened(id);
+    };
+
     const menuItems = getAllMenu();
 
     return (
@@ -26,6 +36,34 @@ const HamburMenu = () => {
                 <HamburIcon onClick={showSidebar}/>
             </div>
             <nav className={showMenu ? 'nav active' : 'nav'}>
+                <ul>
+                    <li onClick={showSidebar}>
+                        <MenuCross />
+                    </li>
+                    {menuItems.map((menuItem) => (
+                        <li key={menuItem.id}>
+                            <Link href={`/${menuItem.link}`}>
+                                <a onClick={() => {toggle(menuItem.id)}}>
+                                    {menuItem.title}
+                                    {menuItem.children ? <span className={`${opened === (menuItem.id) ? 'arrow active' : 'arrow'}`}><MenuArrow /></span> : null}
+                                </a>
+                            </Link>
+                            {menuItem.children && <ul className={`${opened === (menuItem.id) ? 'submenu active': 'submenu'}`}>
+                                {menuItem.children.map((item) => (
+                                    <li key={item.id}>
+                                        <Link href={`/${item.link}`}>
+                                            <a onClick={showSidebar}>
+                                                {item.title}
+                                            </a>
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>}
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+            {/*<nav className={showMenu ? 'nav active' : 'nav'}>
                 <ul onClick={showSidebar}>
                     <li>
                         <MenuCross />
@@ -47,7 +85,7 @@ const HamburMenu = () => {
                         </li>
                     ))}
                 </ul>
-            </nav>
+            </nav>*/}
         </div>
     );
 };
