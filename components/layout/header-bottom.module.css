@@ -43,6 +43,7 @@
     align-items: center;
     top: 5.6rem;
     opacity: 0;
+    visibility: hidden;
     transform: translateY(30px);
     transition: all 300ms ease-in-out;
     border-radius: 8px;
@@ -71,11 +72,14 @@
 .header-bottom .navigation ul li > ul li:hover{
     background: #f3e9f5;
     color: #6f2a82;
+    width: 100%;
+    text-align: center;
 }
 
-.header-bottom .navigation ul li:hover ul{
+.header-bottom .navigation > nav > ul > li:hover ul.subMenu{
     opacity: 1;
-    transform: translateY(0);
+    visibility: visible;
+    transform: translateY(-23px);
 }
 
 .header-bottom .navigation ul li:hover ul li a{

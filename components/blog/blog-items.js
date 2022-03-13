@@ -20,7 +20,7 @@ const BlogItems = () => {
     }
 
     const nextPage = () => {
-        if (currentPage === 2){
+        if (currentPage === 3){
             return null;
         }
         setCurrentPage(currentPage + 1);
