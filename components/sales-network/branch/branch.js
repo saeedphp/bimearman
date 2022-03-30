@@ -4,6 +4,8 @@ import styles from './branch.module.css';
 import Cities from "./cities";
 import {allBranches} from "../../../data/branch";
 import Link from "next/link";
+import {NextSeo} from "next-seo";
+import imgPath from "../../../public/images/page-header.webp";
 
 const Branch = () => {
 
@@ -11,15 +13,21 @@ const Branch = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="شعب بیمه آرمان">
+
+            </NextSeo>
+            <PageHeader title="شعب بیمه آرمان" bg={imgPath}/>
             <section className={styles.branch}>
+                <h2 className={styles.title}>
+                    بیمه آرمان در سرتاسر ایران عزیزمان در کنار شماست…
+                </h2>
                 <div className={styles.map}>
                     <div className={styles.cities}>
                         <Cities items={branches} />
                     </div>
                     <div className={styles.map}>
                         <div>
-                            <svg style={{width: '100%'}} x="0px" y="0px" viewBox="0 0 500 500">
+                            <svg id="map" x="0px" y="0px" viewBox="0 0 500 500">
                                 <Link href="#" passHref>
                                     <a title="آذربایجان غربی">
                                         <span>

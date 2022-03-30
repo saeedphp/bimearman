@@ -473,6 +473,35 @@ input[type=radio]{
   margin: 1rem .2rem;
 }
 
+#map{
+  width: 700px;
+}
+
+#damage-map{
+  width: 700px;
+}
+
+#damage-map g.map-container__iran-map__province{
+  fill: #CFBBD4
+}
+
+#damage-map g.map-container__iran-map__border{
+  fill: #fff
+}
+
+#damage-map g.map-container__iran-map__sea{
+  fill: #fff;
+}
+
+#damage-map g.map-container__iran-map__lake{
+  fill: #7ea9e0;
+}
+
+#damage-map g.map-container__iran-map__island{
+  fill: #fff;
+}
+
+
 @media (max-width: 768px){
   .rules-tab li.active::before{
     width: 16px;
@@ -507,5 +536,54 @@ input[type=radio]{
   }
   .blog-detail__related .title p::before{
     width: 70%;
+  }
+  .breadcrumb ol{
+    padding: 0;
+  }
+  .breadcrumb ol li {
+    margin: 0.5rem;
+    font-size: .7rem;
+  }
+  .breadcrumb ol span {
+    margin: 0.4rem 0.2rem;
+  }
+  #map{
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slick-slide{
+    transform: scale(.69);
+  }
+
+  .slick-slide.slick-current{
+    transform: scale(1) !important;
+    position: relative;
+    z-index: 99;
+  }
+
+  div.slick-active{
+    transform: scale(.79) translateX(200px);
+  }
+
+  .slick-active + .slick-active{
+    transform: scale(.89) translateX(100px);
+  }
+
+  .slick-active + .slick-active + .slick-active + .slick-active{
+    transform: scale(.89) translateX(-100px);
+    z-index: 1;
+    position: relative;
+  }
+
+  .slick-active + .slick-active + .slick-active + .slick-active + .slick-active{
+    transform: scale(.79) translateX(-200px);
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  #map{
+    width: 400px;
   }
 }

@@ -41,9 +41,9 @@ const BranchReport = () => {
 
     const showMore = () => {
         if (numberOfItemsShown + 3 <= items.length) {
-            setNumberOfItemsToShown(numberOfItemsShown + 3);
+            setNumberOfItemsToShown(numberOfItemsShown + 10);
         } else {
-            setNumberOfItemsToShown(numberOfItemsShown + 3);
+            setNumberOfItemsToShown(numberOfItemsShown + 10);
         }
     };
 

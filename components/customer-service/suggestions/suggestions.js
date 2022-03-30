@@ -3,6 +3,8 @@ import styles from './suggestions.module.css';
 import PageHeader from "../../ui/page-header";
 import Card from "../../ui/card";
 import Button from "../../ui/button";
+import {NextSeo} from "next-seo";
+import imgPath from "../../../public/images/page-header.webp";
 
 const Suggestions = () => {
 
@@ -12,42 +14,45 @@ const Suggestions = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="انتقادات و پیشنهادات ">
+
+            </NextSeo>
+            <PageHeader title="انتقادات و پیشنهادات " bg={imgPath}/>
             <Card className={styles.suggestion}>
-                    <h2>
-                        بیمه آرمان پذیرای هر گونه انتقادات و پیشنهادات از سمت شما می باشد.
-                    </h2>
-                    <form>
+                <h2>
+                    بیمه آرمان پذیرای هر گونه انتقادات و پیشنهادات از سمت شما می باشد.
+                </h2>
+                <form>
 
-                        <div className={styles.controls}>
-                            <div className={styles.control}>
-                                <label>
-                                    نام و نام خانوادگی*
-                                </label>
-                                <input type="text" name="name" id="name" />
-                            </div>
-
-                            <div className={styles.control}>
-                                <label>
-                                    شماره موبایل*
-                                </label>
-                                <input type="number" name="mobile" id="mobile" />
-                            </div>
+                    <div className={styles.controls}>
+                        <div className={styles.control}>
+                            <label>
+                                نام و نام خانوادگی*
+                            </label>
+                            <input type="text" name="name" id="name"/>
                         </div>
 
-                        <div className={styles.txt}>
+                        <div className={styles.control}>
                             <label>
-                                انتقاد و پیشنهادات شما*
+                                شماره موبایل*
                             </label>
-                            <textarea name="suggest" id="suggest">
+                            <input type="number" name="mobile" id="mobile"/>
+                        </div>
+                    </div>
+
+                    <div className={styles.txt}>
+                        <label>
+                            انتقاد و پیشنهادات شما*
+                        </label>
+                        <textarea name="suggest" id="suggest">
 
                             </textarea>
-                        </div>
+                    </div>
 
-                        <Button className={styles.button} onClick={submitHandler}>
-                            ارسال پیام
-                        </Button>
-                    </form>
+                    <Button className={styles.button} onClick={submitHandler}>
+                        ارسال پیام
+                    </Button>
+                </form>
             </Card>
         </Fragment>
     )

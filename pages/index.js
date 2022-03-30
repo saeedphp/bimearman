@@ -5,6 +5,7 @@ import Insurance from "../components/home-page/insurance/insurance";
 import AllInsurance from "../components/home-page/all-insurance/all-insurance";
 import Blog from "../components/home-page/blog/blog";
 import Head from "next/head";
+import FloatingMenu from "../components/home-page/floating-menu/floating-menu";
 
 const HomePage = () => {
     return (
@@ -19,6 +20,7 @@ const HomePage = () => {
             <Insurance/>
             <AllInsurance/>
             <Blog/>
+            <FloatingMenu />
         </Fragment>
     );
 };

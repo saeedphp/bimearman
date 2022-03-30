@@ -1,10 +1,13 @@
 import {Fragment, useState} from "react";
 import styles from './general-conditions.module.css';
 import PageHeader from "../../ui/page-header";
+import bgHeader from '../../../public/images/page-header.webp';
 import Card from "../../ui/card";
 import Title from "../../ui/title";
 import {getAllConditions} from "../../../data/conditions";
 import GeneralConditionsItems from "./general-conditions-items";
+import {NextSeo} from "next-seo";
+import imgPath from "../../../public/images/page-header.webp";
 
 const GeneralConditions = () => {
 
@@ -12,7 +15,10 @@ const GeneralConditions = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="شرایط عمومی بیمه نامه">
+
+            </NextSeo>
+            <PageHeader title="شرایط عمومی بیمه نامه" bg={bgHeader} />
             <Card className={styles.conditions}>
                 <Title>
                     آیین نامه شماره ۷۷

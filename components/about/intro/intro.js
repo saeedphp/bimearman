@@ -1,4 +1,4 @@
-import {Fragment} from "react";
+import {Fragment, useState} from "react";
 import PageHeader from "../../ui/page-header";
 import styles from './intro.module.css';
 import Image from "next/image";
@@ -13,15 +13,74 @@ import CounterUp from "../../ui/counter-up";
 import Card from "../../ui/card";
 import DownloadCard from "../../ui/download-card";
 import Accordion from "../../ui/accordion";
+import Slider from 'react-slick';
+import pic1 from '../../../public/images/tandis/tandis-1.webp';
+import pic2 from '../../../public/images/tandis/tandis-2.webp';
+import pic3 from '../../../public/images/tandis/tandis-3.webp';
+import pic4 from '../../../public/images/tandis/tandis-4.webp';
+import pic5 from '../../../public/images/tandis/tandis-5.webp';
+import pic6 from '../../../public/images/tandis/tandis-3.webp';
+import pic7 from '../../../public/images/tandis/tandis-4.webp';
+import pic8 from '../../../public/images/tandis/tandis-5.webp';
+import {NextSeo} from "next-seo";
+import bgHeader from "../../../public/images/page-header.webp";
+import Title from "../../ui/title";
 
 const Intro = () => {
 
     const about = aboutData();
 
+    const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+
+    const settings = {
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        loop: true,
+        dots: true,
+        centerPadding: "60px",
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        draggable: true,
+        autoplaySpeed:2000,
+        rtl: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                    centerMode: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerMode: false,
+                }
+            }
+        ]
+    };
+
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="بیمه آرمان در یک نگاه">
+
+            </NextSeo>
+            <PageHeader title="بیمه آرمان در یک نگاه" bg={bgHeader} />
             <section className={styles.intro}>
                 <div className={styles.init}>
                     <div className={`${styles.imgWrapper} ${styles.imgWrapperFirst}`}>
@@ -47,7 +106,7 @@ const Intro = () => {
                         </p>
                     </div>
                 </div>
-                <Card>
+                <Card className={styles['mb-2']}>
                     <div className={styles.init}>
                         <div className={styles.info}>
                             <h2 className={styles.title}>
@@ -110,7 +169,7 @@ const Intro = () => {
                         </div>
                     </div>
                 </Card>
-                <Card>
+                <Card className={styles['mb-2']}>
                     <div className={styles.init}>
                         <div className={styles.info}>
                             <h2 className={styles.title}>
@@ -150,7 +209,7 @@ const Intro = () => {
                         </div>
                     </div>
                 </Card>
-                <Card>
+                <Card className={styles['mb-2']}>
                     <div className={styles.init}>
                         <div className={styles.imgWrapper}>
                             <Image src={innovation} alt="image" layout={"fill"}/>
@@ -169,6 +228,44 @@ const Intro = () => {
                     question='توانگری مالی'
                     answer='با توجه به پراکندگی متقاضیان بیمه و بیمه گذاران در مناطق مختلف کشور، شرکت بیمۀ آرمان با تاسیس و  راه اندازی 35 شعبه در مرکز استان ها و بعضی از شهرهای بزرگ و همچنین با در اختیار داشتن حدود  360  نمایندگی در اقصی نقاط کشور  که به تعداد قابل توجهی از آنان اختیار بازدید و صدور بیمه نامه تفویض  گردیده است، امکانات لازم را برای ارایه خدمات بیمه ای در شهر یا منطقه محل استقرار بیمه گذاران و بیمه شدگان فراهم کرده که با اجرای برنامه های از پیش تعیین شده شبکه فروش به طور مستمر در حال توسعه است.'
                 />
+                <Accordion
+                    question='بیمه های اتکایی و توزیع ریسک بین بیمه گران اتکایی'
+                    answer='با توجه به پراکندگی متقاضیان بیمه و بیمه گذاران در مناطق مختلف کشور، شرکت بیمۀ آرمان با تاسیس و  راه اندازی 35 شعبه در مرکز استان ها و بعضی از شهرهای بزرگ و همچنین با در اختیار داشتن حدود  360  نمایندگی در اقصی نقاط کشور  که به تعداد قابل توجهی از آنان اختیار بازدید و صدور بیمه نامه تفویض  گردیده است، امکانات لازم را برای ارایه خدمات بیمه ای در شهر یا منطقه محل استقرار بیمه گذاران و بیمه شدگان فراهم کرده که با اجرای برنامه های از پیش تعیین شده شبکه فروش به طور مستمر در حال توسعه است.'
+                />
+                <Accordion
+                    question='خدمات پس از فروش'
+                    answer='با توجه به پراکندگی متقاضیان بیمه و بیمه گذاران در مناطق مختلف کشور، شرکت بیمۀ آرمان با تاسیس و  راه اندازی 35 شعبه در مرکز استان ها و بعضی از شهرهای بزرگ و همچنین با در اختیار داشتن حدود  360  نمایندگی در اقصی نقاط کشور  که به تعداد قابل توجهی از آنان اختیار بازدید و صدور بیمه نامه تفویض  گردیده است، امکانات لازم را برای ارایه خدمات بیمه ای در شهر یا منطقه محل استقرار بیمه گذاران و بیمه شدگان فراهم کرده که با اجرای برنامه های از پیش تعیین شده شبکه فروش به طور مستمر در حال توسعه است.'
+                />
+                <Accordion
+                    question='سرمایه گذاری'
+                    answer='با توجه به پراکندگی متقاضیان بیمه و بیمه گذاران در مناطق مختلف کشور، شرکت بیمۀ آرمان با تاسیس و  راه اندازی 35 شعبه در مرکز استان ها و بعضی از شهرهای بزرگ و همچنین با در اختیار داشتن حدود  360  نمایندگی در اقصی نقاط کشور  که به تعداد قابل توجهی از آنان اختیار بازدید و صدور بیمه نامه تفویض  گردیده است، امکانات لازم را برای ارایه خدمات بیمه ای در شهر یا منطقه محل استقرار بیمه گذاران و بیمه شدگان فراهم کرده که با اجرای برنامه های از پیش تعیین شده شبکه فروش به طور مستمر در حال توسعه است.'
+                />
+                <div className={styles.slider}>
+                    <Title className={styles.title}>
+                        تندیس و نشان های بیمه آرمان
+                    </Title>
+                    <Slider {...settings}>
+                        {images.map((img, idx) => (
+                            <div key={idx} className={styles.tandis}>
+                                <Image src={img} alt="image" layout={"fill"} />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
+                <div className={styles.slider}>
+                    <Title className={styles.title}>
+                        لوح تقدیر و گواهینامه های بیمه آرمان
+                    </Title>
+                    <Slider {...settings}>
+                        {images.map((img, idx) => (
+                            <div key={idx} className={styles.tandis}>
+                                <Image src={img} alt="image" layout={"fill"} />
+                            </div>
+                        ))}
+                    </Slider>
+                </div>
+
             </section>
         </Fragment>
     );

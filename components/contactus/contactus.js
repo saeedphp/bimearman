@@ -2,11 +2,17 @@ import styles from './contactus.module.css';
 import PageHeader from "../ui/page-header";
 import ContactInfo from "./contact-info";
 import ContactForm from "./contact-form";
+import {NextSeo} from "next-seo";
+import bgHeader from "../../public/images/page-header.webp";
+import React from "react";
 
 const Contactus = () => {
     return (
         <>
-            <PageHeader title="تماس با ما" />
+            <NextSeo title="تماس با ما">
+
+            </NextSeo>
+            <PageHeader title="تماس با ما" bg={bgHeader} />
             <section className={styles.contactus}>
                 <div className={styles.mapWrapper}>
                     <iframe

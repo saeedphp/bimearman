@@ -4,6 +4,8 @@ import styles from './representation.module.css';
 import Card from "../ui/card";
 import TitleContent from "../ui/title-content";
 import RepresentationForm from "./representation-form";
+import {NextSeo} from "next-seo";
+import imgPath from "../../public/images/page-header.webp";
 
 const Representation = () => {
 
@@ -15,7 +17,10 @@ const Representation = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="اخذ نمایندگی">
+
+            </NextSeo>
+            <PageHeader title="اخذ نمایندگی" bg={imgPath}/>
             <Card className={styles.representation}>
                 <nav className="rules-tab">
                     <ul>

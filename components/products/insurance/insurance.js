@@ -6,6 +6,8 @@ import imgPath from '../../../public/images/product-img.webp';
 import Card from "../../ui/card";
 import Title from "../../ui/title";
 import {getALlProduct} from "../../../data/product";
+import {NextSeo} from "next-seo";
+import bgHeader from "../../../public/images/page-header.webp";
 
 
 const Insurance = () => {
@@ -20,7 +22,10 @@ const Insurance = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="بیمه اشخاص">
+
+            </NextSeo>
+            <PageHeader title="بیمه اشخاص" bg={bgHeader} />
             <section className={styles.insurance}>
                 <div className={styles.main}>
                     <div className={styles.tab}>

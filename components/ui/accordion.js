@@ -38,9 +38,9 @@ const Accordion = (props) => {
 
             </div>
             <div className={`faq-answer ${styles['faq-answer']} ${opened === (id) ? 'active' : null}`}>
-                <div>
+                <p>
                     {props.answer}
-                </div>
+                </p>
             </div>
         </div>
     );

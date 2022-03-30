@@ -8,16 +8,24 @@ const CounterUp = ({end}) => {
     const accumlator = end / 50;
 
     const updateCounter = () => {
-        if (ref.current < end) {
-            const res = Math.ceil(ref.current + accumlator);
-            if (ref.current > end) return setState(end);
-            setState(res);
-            ref.current = res;
-        }
-        setTimeout(updateCounter, 50);
+        const counterHeight = document.querySelector(".count");
+        let height = counterHeight.offsetTop;
+        window.addEventListener('scroll', () => {
+           if (window.scrollY >= height) {
+               if (ref.current < end) {
+                   const res = Math.ceil(ref.current + accumlator);
+                   if (ref.current > end) return setState(end);
+                   setState(res);
+                   ref.current = res;
+               }
+               setTimeout(updateCounter, 50);
+           }
+        });
+
     };
 
     useEffect(() => {
+
         let isMounted = true;
         if (isMounted) {
             updateCounter();
@@ -26,9 +34,9 @@ const CounterUp = ({end}) => {
     }, [end]);
 
     return (
-        <Fragment>
+        <div className="count">
             {state}
-        </Fragment>
+        </div>
     );
 
 };

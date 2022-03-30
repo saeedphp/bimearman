@@ -6,6 +6,8 @@ import Image from "next/image";
 import imgPath from '../../../public/images/terms.webp';
 import DownloadCard from "../../ui/download-card";
 import {getAllTerms} from "../../../data/terms";
+import {NextSeo} from "next-seo";
+import bgHeader from "../../../public/images/page-header.webp";
 
 const Terms = () => {
 
@@ -13,7 +15,10 @@ const Terms = () => {
 
     return (
         <>
-            <PageHeader />
+            <NextSeo title="شرایط عضویت در هیئت مدیره">
+
+            </NextSeo>
+            <PageHeader title="شرایط عضویت در هیئت مدیره" bg={bgHeader} />
             <section className={styles.terms}>
                 <Card>
                     <Title>

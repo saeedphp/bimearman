@@ -34,7 +34,6 @@ const BlogDetailPage = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
             <section className="blog-detail">
                 <Sidebar/>
                 <div className="blog-detail_main">

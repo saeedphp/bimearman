@@ -6,7 +6,7 @@ import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
 import styles from './page-header.module.css';
 
-const PageHeader = ({title}) => {
+const PageHeader = ({title,bg}) => {
 
     const router = useRouter();
     const [breadcrumbs, setBreadcrumbs] = useState();
@@ -48,10 +48,10 @@ const PageHeader = ({title}) => {
                             </BreadcrumbItem>
                         ))}
                 </Breadcrumb>
-                <h2 style={{position: 'absolute'}}>
+                <h2 className={styles.title}>
                     {title}
                 </h2>
-                <Image src={imgPath} alt="page header image" layout={"fill"} />
+                <Image src={bg} alt={title} layout={"fill"} />
             </div>
         </>
     )

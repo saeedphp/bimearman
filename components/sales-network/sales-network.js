@@ -2,8 +2,9 @@ import {Fragment, useState} from "react";
 import styles from './sales-network.module.css';
 import PageHeader from "../ui/page-header";
 import Card from "../ui/card";
-import Umbrella from "../icons/umbrella";
 import TitleContent from "../ui/title-content";
+import {NextSeo} from "next-seo";
+import imgPath from '../../public/images/page-header.webp';
 
 const SalesNetWork = () => {
 
@@ -15,7 +16,10 @@ const SalesNetWork = () => {
 
     return (
         <Fragment>
-            <PageHeader/>
+            <NextSeo title="قوانین و مقررات">
+
+            </NextSeo>
+            <PageHeader title="قوانین و مقررات" bg={imgPath}/>
             <Card className={styles.rules}>
                 <nav className="rules-tab">
                     <ul>

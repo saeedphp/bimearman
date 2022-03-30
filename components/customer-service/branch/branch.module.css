@@ -1,0 +1,10 @@
+.branch {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem 4rem;
+    flex-direction: column;
+}

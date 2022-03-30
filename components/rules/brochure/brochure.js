@@ -1,12 +1,12 @@
 import styles from './brochure.module.css';
 import {Fragment} from "react";
 import PageHeader from "../../ui/page-header";
+import bgHeader from '../../../public/images/page-header.webp';
 import Card from "../../ui/card";
-import Image from "next/image";
 import imgPath from '../../../public/images/brochure/download-1.webp';
-import Download from "../../icons/download";
 import {allBrochure} from "../../../data/brochure";
 import BrochureItem from "./brochure-item";
+import {NextSeo} from "next-seo";
 
 const Brochure = () => {
 
@@ -14,7 +14,10 @@ const Brochure = () => {
 
     return (
         <Fragment>
-            <PageHeader />
+            <NextSeo title="بروشور">
+
+            </NextSeo>
+            <PageHeader title="بروشور" bg={bgHeader}/>
             <section className={styles.brochure}>
                 <Card className={styles.wrapper}>
                     {allBrochures.map((allBrochure) => (
