@@ -1,9 +1,9 @@
 import Branch from "../../components/customer-service/branch/branch.js";
 
-const BranchPage = () => {
+const HealthCenterPage = () => {
     return (
         <Branch />
     )
 };
 
-export default BranchPage;
+export default HealthCenterPage;

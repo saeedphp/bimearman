@@ -4,9 +4,12 @@
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
     align-items: center;
     margin-bottom: 1rem;
+    width: 44%;
+    position: absolute;
+    top: 2rem;
+    padding: 1rem 1.3rem;
 }
 
 .wrapper span{

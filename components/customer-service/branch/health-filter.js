@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React from 'react';
 import {allCities} from "../../../data/cities";
 import styles from './health-filter.module.css';
 import Earth from "../../icons/earth";
@@ -6,11 +6,8 @@ import ArrowDown from "../../icons/arrow-down";
 
 const HealthFilter = (props) => {
 
-    /*const [selected, setSelected] = useState('تهران');*/
-
     const dropdownChangeHandler = (event) => {
         props.onChangeFilter(event.target.value);
-        /*setSelected(selected);*/
     };
 
     const cityList = allCities();
@@ -26,16 +23,6 @@ const HealthFilter = (props) => {
                         </option>
                     ))}
                 </select>
-                {/*<span>
-                    {selected}
-                </span>
-                <ul onChange={dropdownChangeHandler}>
-                    {cityList.map((city) => (
-                        <li key={city.id} onClick={() => setSelected(city.city)} >
-                            {city.city}
-                        </li>
-                    ))}
-                </ul>*/}
                 <span>
                     <ArrowDown />
                 </span>
