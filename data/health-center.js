@@ -3,7 +3,7 @@ const DUMMY_EXPENSES = [
         id: 'h1',
         link: '#',
         cityTitle: 'اصفهان',
-        centerItem: [
+        centerItem: [     
             {
                 city: 'اصفهان',
                 centerName: 'چشم پزشکی آبان',

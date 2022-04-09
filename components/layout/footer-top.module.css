@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     height: auto;
-    padding: 2rem 4rem;
+    padding: 0rem 4rem;
 }
 
 .item {
@@ -35,7 +35,7 @@
 }
 
 .item .title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #403C49;
     font-weight: 600;
     position: relative;
@@ -56,6 +56,7 @@
 
 .item ul li {
     margin-bottom: 1rem;
+    font-size: .9rem;
 }
 
 .item .enamad span {

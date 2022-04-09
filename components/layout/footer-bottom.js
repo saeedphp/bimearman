@@ -27,6 +27,8 @@ const FooterBottom = () => {
                 <p>
                     کلیه حقوق متعلق به بیمه آرمان می باشد
                 </p>
+            </div>
+            <div className={styles.copyRight}>
                 <p>
                     طراحی و اجرا توسط
                     <a href="https://faramouj.ir">

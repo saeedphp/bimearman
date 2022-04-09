@@ -4,6 +4,7 @@ body {
   margin: 0;
   direction: rtl;
   text-align: right;
+  overflow-x: hidden;
 }
 
 @font-face {
