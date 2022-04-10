@@ -111,6 +111,7 @@
     font-size: 2rem;
     text-align: left;
     direction: ltr;
+    display: flex;
 }
 
 .intro .saham h2{
@@ -142,4 +143,20 @@
 .slider .title{
     width: fit-content;
     margin: 0 auto 3rem;
+}
+
+@media (max-width: 768px) {
+    .intro{
+        padding: 1rem .5rem;
+    }
+    .intro .init{
+        flex-wrap: wrap;
+    }
+    .intro .init > div{
+        padding: 1rem;
+    }
+    .intro .saham > div{
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
 }

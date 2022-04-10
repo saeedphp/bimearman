@@ -53,7 +53,7 @@ const Insurance = () => {
                                         {toggle === data.id ? (
                                             <li>
                                                 {data.contentTitle !== '' ?
-                                                    <Title>
+                                                    <Title className={styles.title}>
                                                         {data.contentTitle}
                                                     </Title> :
                                                 null

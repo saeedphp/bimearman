@@ -74,13 +74,13 @@ const Intro = () => {
         ]
     };
 
-
     return (
         <Fragment>
             <NextSeo title="بیمه آرمان در یک نگاه">
 
             </NextSeo>
             <PageHeader title="بیمه آرمان در یک نگاه" pageTitle="درباره ما" pageLink="/about" bg={bgHeader} />
+
             <section className={styles.intro}>
                 <div className={styles.init}>
                     <div className={`${styles.imgWrapper} ${styles.imgWrapperFirst}`}>

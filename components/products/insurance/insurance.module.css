@@ -70,3 +70,25 @@
 .insurance .main .info div{
     text-align: justify;
 }
+
+@media (max-width: 768px) {
+    .insurance{
+        padding: 1rem .5rem;
+    }
+    .insurance .main{
+        flex-wrap: wrap;
+    }
+    .insurance .main .tab{
+        width: 100%;
+    }
+    .insurance .main .info{
+        width: 100%;
+    }
+    .insurance .main .tab > span{
+        display: none !important;
+    }
+    .insurance .main .info .title{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
