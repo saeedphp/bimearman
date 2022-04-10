@@ -16,7 +16,7 @@ const DamageBranch = () => {
             <NextSeo title="شعب دریافت خسارت">
 
             </NextSeo>
-            <PageHeader title="شعب دریافت خسارت" bg={imgPath}/>
+            <PageHeader title="شعب دریافت خسارت" pageTitle="امور مشتریان" pageLink="/customerservice" bg={imgPath}/>
             <section className={styles['branch-damage']}>
                 <h2 className={styles.title}>
                     بیمه گذاران محترم می توانند برای دریافت خسارت به شعب بیمه آرمان در سراسر کشور عزیزمان مراجعه نمایند…

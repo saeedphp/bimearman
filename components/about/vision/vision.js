@@ -17,7 +17,7 @@ const Vision = () => {
             <NextSeo title="چشم انداز های بیمه آرمان">
 
             </NextSeo>
-            <PageHeader title="چشم انداز های بیمه آرمان" bg={bgHeader} />
+            <PageHeader title="چشم انداز های بیمه آرمان" pageTitle="درباره ما" pageLink="/about" bg={bgHeader} />
             <section className={styles.vision}>
                 <div>
                     <Image src={imgPath} alt="vision image" layout={"fill"} />

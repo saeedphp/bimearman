@@ -12,7 +12,7 @@ const Contactus = () => {
             <NextSeo title="تماس با ما">
 
             </NextSeo>
-            <PageHeader title="تماس با ما" bg={bgHeader} />
+            <PageHeader title="تماس با ما" pageTitle="" pageLink="/contactus" bg={bgHeader} />
             <section className={styles.contactus}>
                 <div className={styles.mapWrapper}>
                     <iframe

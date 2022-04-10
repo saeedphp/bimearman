@@ -13,7 +13,7 @@ const Blog = () => {
             <NextSeo title="اخبار">
 
             </NextSeo>
-            <PageHeader title="اخبار" bg={bgHeader} />
+            <PageHeader title="اخبار" pageTitle="روابط عمومی" pageLink="/blog" bg={bgHeader} />
             <section className={styles.blog}>
                 <Sidebar/>
                 <BlogItems/>

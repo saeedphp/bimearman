@@ -15,7 +15,7 @@ const Reporting = () => {
           <NextSeo title="گزارشگری و افشای اطلاعات">
 
           </NextSeo>
-          <PageHeader title="گزارشگری و افشای اطلاعات" bg={bgHeader} />
+          <PageHeader title="گزارشگری و افشای اطلاعات" pageTitle="" pageLink="/reporting" bg={bgHeader} />
           <section className={styles.reporting}>
               <ReportItem />
               <ReportRisk />

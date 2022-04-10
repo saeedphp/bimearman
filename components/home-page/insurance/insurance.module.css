@@ -78,6 +78,7 @@
     .insurance{
         padding: 2rem 1rem;
         flex-direction: column;
+        transform: translateY(-13%);
     }
     .insurance__image{
         width: 100%;

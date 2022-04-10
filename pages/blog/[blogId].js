@@ -11,6 +11,7 @@ import CommentForm from "../../components/icons/comment-form";
 import Button from "../../components/ui/button";
 import RelatedBlog from "../../components/icons/related-blog";
 import BlogItem from "../../components/home-page/blog/blog-item";
+import bgHeader from "../../public/images/page-header.webp";
 
 const BlogDetailPage = () => {
 
@@ -34,6 +35,7 @@ const BlogDetailPage = () => {
 
     return (
         <Fragment>
+            <PageHeader title={blog.title} pageTitle="بلاگ" pageLink="/blog" bg={bgHeader}/>
             <section className="blog-detail">
                 <Sidebar/>
                 <div className="blog-detail_main">

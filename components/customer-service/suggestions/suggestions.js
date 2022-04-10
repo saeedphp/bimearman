@@ -17,7 +17,7 @@ const Suggestions = () => {
             <NextSeo title="انتقادات و پیشنهادات ">
 
             </NextSeo>
-            <PageHeader title="انتقادات و پیشنهادات " bg={imgPath}/>
+            <PageHeader title="انتقادات و پیشنهادات " pageTitle="امور مشتریان" pageLink="" bg={imgPath}/>
             <Card className={styles.suggestion}>
                 <h2>
                     بیمه آرمان پذیرای هر گونه انتقادات و پیشنهادات از سمت شما می باشد.

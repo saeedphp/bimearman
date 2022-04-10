@@ -16,7 +16,7 @@ const Branch = () => {
             <NextSeo title="شعب بیمه آرمان">
 
             </NextSeo>
-            <PageHeader title="شعب بیمه آرمان" bg={imgPath}/>
+            <PageHeader title="شعب بیمه آرمان" pageTitle="شبکه فروش" pageLink="/salesnetwork" bg={imgPath}/>
             <section className={styles.branch}>
                 <h2 className={styles.title}>
                     بیمه آرمان در سرتاسر ایران عزیزمان در کنار شماست…

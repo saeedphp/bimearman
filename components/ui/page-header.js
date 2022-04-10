@@ -5,8 +5,10 @@ import Breadcrumb from "../breadcrumb/breadcrumb";
 import {useRouter} from "next/router";
 import {useEffect, useState} from "react";
 import styles from './page-header.module.css';
+import Link from "next/link";
+import BreadcrumbArrow from "../icons/breadcrumb-arrow";
 
-const PageHeader = ({title,bg}) => {
+const PageHeader = ({title,bg,pageTitle,pageLink}) => {
 
     const router = useRouter();
     const [breadcrumbs, setBreadcrumbs] = useState();
@@ -33,7 +35,7 @@ const PageHeader = ({title,bg}) => {
     return (
         <>
             <div className={styles['page-header']}>
-                <Breadcrumb>
+                {/*<Breadcrumb>
                     <BreadcrumbItem isCurrent={router.pathname === "/"} href="/">
                         خانه
                     </BreadcrumbItem>
@@ -47,7 +49,31 @@ const PageHeader = ({title,bg}) => {
                                 {breadcrumb.label}
                             </BreadcrumbItem>
                         ))}
-                </Breadcrumb>
+                </Breadcrumb>*/}
+                <ul className={styles.list}>
+                    <li>
+                        <Link href="/">
+                            <a>
+                                خانه
+                            </a>
+                        </Link>
+                    </li>
+
+                    {pageTitle != "" &&
+                        <>
+                            <BreadcrumbArrow />
+                            <li>
+                                <Link href={pageLink}>
+                                    {pageTitle}
+                                </Link>
+                            </li>
+                        </>
+                    }
+                    <BreadcrumbArrow />
+                    <li>
+                        {title}
+                    </li>
+                </ul>
                 <h2 className={styles.title}>
                     {title}
                 </h2>

@@ -168,6 +168,9 @@
 /*counter clockWise spin*/
 
 @media (max-width: 768px) {
+    .intro .wrapper .personWrapper{
+        transform: scale(.7);
+    }
     .intro .wrapper .person{
         transform: scale(.6);
     }
@@ -176,16 +179,16 @@
         height: 216px;
     }
     .intro .wrapper .dashedBorder__second{
-        width: 294px;
-        height: 294px;
+        width: 279px;
+        height: 279px;
     }
     .intro .wrapper .dashedBorder__third{
         width: 357px;
         height: 357px;
     }
     .intro .wrapper .dashedBorder__second > div > a{
-        padding: 7px;
-        font-size: .7rem;
+        padding: 12px;
+        font-size: .8rem;
     }
     .intro .wrapper .dashedBorder__second div.first a{
         right: 3rem;

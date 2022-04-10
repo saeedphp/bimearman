@@ -17,7 +17,7 @@ const Brochure = () => {
             <NextSeo title="بروشور">
 
             </NextSeo>
-            <PageHeader title="بروشور" bg={bgHeader}/>
+            <PageHeader title="بروشور" pageTitle="قوانین و مقررات" pageLink="/rules" bg={bgHeader}/>
             <section className={styles.brochure}>
                 <Card className={styles.wrapper}>
                     {allBrochures.map((allBrochure) => (

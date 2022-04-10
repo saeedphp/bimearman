@@ -12,7 +12,7 @@ const Personel = () => {
           <NextSeo title="پرسنل و اعضای بیمه آرمان">
 
           </NextSeo>
-          <PageHeader title="پرسنل و اعضای بیمه آرمان" bg={bgHeader} />
+          <PageHeader title="پرسنل و اعضای بیمه آرمان" pageTitle="درباره ما" pageLink="/about" bg={bgHeader} />
           <section className={styles.personel}>
               <ul>
                   <PersonelItem />

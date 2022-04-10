@@ -19,7 +19,7 @@ const SalesNetWork = () => {
             <NextSeo title="قوانین و مقررات">
 
             </NextSeo>
-            <PageHeader title="قوانین و مقررات" bg={imgPath}/>
+            <PageHeader title="قوانین و مقررات" pageTitle="شبکه فروش" pageLink="/salesnetwork" bg={imgPath}/>
             <Card className={styles.rules}>
                 <nav className="rules-tab">
                     <ul>

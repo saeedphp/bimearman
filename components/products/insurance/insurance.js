@@ -25,7 +25,7 @@ const Insurance = () => {
             <NextSeo title="بیمه اشخاص">
 
             </NextSeo>
-            <PageHeader title="بیمه اشخاص" bg={bgHeader} />
+            <PageHeader title="بیمه اشخاص" pageTitle="محصولات" pageLink="/products" bg={bgHeader} />
             <section className={styles.insurance}>
                 <div className={styles.main}>
                     <div className={styles.tab}>
