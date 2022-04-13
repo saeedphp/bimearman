@@ -31,6 +31,7 @@
     right: 2rem;
     color: rgba(111, 42, 130, 1);
     transition: all .4s ease;
+    font-size: .8rem;
 }
 
 .items .imageWrapper .category:hover {
@@ -40,7 +41,7 @@
 
 .items > a {
     color: #6F2A82;
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: right;
     margin: 1rem 0;
     font-weight: 600;
@@ -57,7 +58,7 @@
 }
 
 .controls time {
-    font-size: 1.2rem;
+    font-size: .9rem;
     display: flex;
     align-items: center;
 }

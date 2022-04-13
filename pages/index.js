@@ -6,6 +6,7 @@ import AllInsurance from "../components/home-page/all-insurance/all-insurance";
 import Blog from "../components/home-page/blog/blog";
 import Head from "next/head";
 import FloatingMenu from "../components/home-page/floating-menu/floating-menu";
+import AllInsurances from "../components/home-page/all-insurances/all-insurances";
 
 const HomePage = () => {
     return (
@@ -18,7 +19,8 @@ const HomePage = () => {
             <Banner/>
             <Intro/>
             <Insurance/>
-            <AllInsurance/>
+            {/*<AllInsurance/>*/}
+            <AllInsurances />
             <Blog/>
             <FloatingMenu />
         </Fragment>

@@ -54,6 +54,8 @@
 
 .header-row__top .btnLogin .signIn span{
     color: #6F2A82;
+    font-size: 0.8rem;
+    margin: 0 3px;
 }
 
 @media (max-width: 768px) {

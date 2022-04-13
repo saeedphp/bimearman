@@ -8,11 +8,12 @@
     border-radius: 35.3158px;
     text-align: center;
     color: #fff;
-    padding: 1rem 2.7rem;
+    padding: 0.6rem 1.7rem;
     overflow: hidden;
     cursor: pointer;
     outline: unset;
     border: none;
+    font-size: .8rem;
 }
 
 .btn::before{

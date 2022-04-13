@@ -23,7 +23,7 @@
 
 .insurance .main .tab li{
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1rem;
     color: rgba(64, 60, 73, 0.78);
     padding-bottom: 2rem;
     border-left: 4px solid rgba(241, 242, 242, 1);
@@ -69,6 +69,8 @@
 
 .insurance .main .info div{
     text-align: justify;
+    font-size: .9rem;
+    line-height: 32px;
 }
 
 @media (max-width: 768px) {

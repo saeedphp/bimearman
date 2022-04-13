@@ -92,7 +92,7 @@
 .contact-form .form h2{
     font-style: normal;
     font-weight: 500;
-    font-size: 36px;
+    font-size: 1.5rem;
     line-height: 56px;
     text-align: center;
     color: #6F2A82;
@@ -112,7 +112,7 @@
 .contact-form .form .controls label{
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 31px;
     text-align: right;
     color: rgba(64, 60, 73, 0.92);
@@ -143,7 +143,7 @@
     border: unset;
     outline: unset;
     width: 100%;
-    font-size: 24px;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px) {
