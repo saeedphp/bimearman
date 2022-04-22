@@ -106,7 +106,7 @@ const Intro = () => {
                         </p>
                     </div>
                 </div>
-                <Card className={styles['mb-2']}>
+                <Card className={`${styles['mb-2']} ${styles['no-padding']}`}>
                     <div className={styles.init}>
                         <div className={styles.info}>
                             <h2 className={styles.title}>
@@ -169,7 +169,7 @@ const Intro = () => {
                         </div>
                     </div>
                 </Card>
-                <Card className={styles['mb-2']}>
+                <Card className={`${styles['mb-2']} ${styles['no-padding']}`}>
                     <div className={styles.init}>
                         <div className={styles.info}>
                             <h2 className={styles.title}>

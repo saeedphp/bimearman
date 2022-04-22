@@ -53,7 +53,7 @@ const AllInsurances = () => {
                             </span>
                             <span className={styles.iconBg}>
                                 <svg
-                                     width="64" height="64" x="0" y="0" viewBox="0 0 74 74"><g><path xmlns="http://www.w3.org/2000/svg" d="m37 41.849a14.578 14.578 0 0 1 -14.563-14.562v-4.912h29.123v4.913a14.578 14.578 0 0 1 -14.56 14.561zm-12.563-17.474v2.913a12.562 12.562 0 0 0 25.123 0v-2.913z" fill="#c2188f" data-original="#000000" className=""></path><path
+                                    width="64" height="64" x="0" y="0" viewBox="0 0 74 74"><g><path xmlns="http://www.w3.org/2000/svg" d="m37 41.849a14.578 14.578 0 0 1 -14.563-14.562v-4.912h29.123v4.913a14.578 14.578 0 0 1 -14.56 14.561zm-12.563-17.474v2.913a12.562 12.562 0 0 0 25.123 0v-2.913z" fill="#c2188f" data-original="#000000" className=""></path><path
                                     xmlns="http://www.w3.org/2000/svg"
                                     d="m47.961 45.655a6.46 6.46 0 0 1 -4.888-6.8l2 .059a4.457 4.457 0 0 0 3.382 4.805z"
                                     fill="#c2188f" data-original="#000000" className=""></path><path

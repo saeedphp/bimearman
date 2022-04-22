@@ -20,18 +20,21 @@ const CitiesFilter = (props) => {
             <div className={styles.wrapper}>
                 <Earth />
                 <select value={props.selected} onChange={dropdownChangeHandler}>
+                    <div>
+                        <input placeholder="search" type="text"/>
+                    </div>
                     {cityList.map((city) => (
                         <option key={city.id} value={city.city}>
                             {city.city}
                         </option>
                     ))}
                 </select>
-                {/*<span>
+                {/*<span data-value={selected}>
                     {selected}
                 </span>
-                <ul onChange={dropdownChangeHandler}>
+                <ul data-value={selected} onChange={dropdownChangeHandler}>
                     {cityList.map((city) => (
-                        <li key={city.id} onClick={() => setSelected(city.city)} >
+                        <li data-value={city.city} key={city.id} onClick={() => setSelected(city.city)} >
                             {city.city}
                         </li>
                     ))}

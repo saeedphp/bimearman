@@ -56,6 +56,28 @@ const DUMMY_DATA = [
         ],
     },
     {
+        id: 'm8',
+        title: 'امور مشتریان',
+        link: '',
+        children: [
+            {
+                id: 'm8-1',
+                link: 'customerservice/damagebranch',
+                title: 'شعب دریافت خسارت',
+            },
+            {
+                id: 'm8-2',
+                link: 'customerservice/healthcenter',
+                title: 'مراکز درمانی',
+            },
+            {
+                id: 'm8-3',
+                link: 'customerservice/suggestions',
+                title: 'انتقادات و پیشنهادات',
+            },
+        ],
+    },
+    {
         id: 'm4',
         title: 'قوانین و مقررات',
         link: '',
