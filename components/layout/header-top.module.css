@@ -42,6 +42,9 @@
     justify-content: center;
     margin-left: 1rem;
 }
+.header-row__top .btnLogin .search svg path {
+    stroke: #6F2A82 !important;
+}
 
 .header-row__top .btnLogin .signIn{
     display: flex;

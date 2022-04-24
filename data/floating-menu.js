@@ -1,6 +1,7 @@
 import User from "../components/icons/floating-menu/user";
 import Earth from "../components/icons/floating-menu/earth";
 import Mail from "../components/icons/floating-menu/mail";
+import Automation from "../components/icons/floating-menu/automation";
 
 const DUMMY_DATA = [
     {
@@ -20,6 +21,12 @@ const DUMMY_DATA = [
         title: 'پست الکترونیکی',
         link: 'https://mymail.armanins.com/',
         icon: <Mail />
+    },
+    {
+        id: 'f4',
+        title: 'اتوماسیون',
+        link: 'https://mymail.armanins.com/',
+        icon: <Automation />
     },
 ];
 

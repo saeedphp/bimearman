@@ -20,7 +20,7 @@
 
 .insurance li .title{
     position: relative;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .insurance li .title::before{
