@@ -505,6 +505,7 @@ input[type=radio]{
 
 .slick-track{
   direction: ltr;
+  width: max-content !IMPORTANT;
 }
 
 .slick-next{
