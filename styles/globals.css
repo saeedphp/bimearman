@@ -503,6 +503,36 @@ input[type=radio]{
   fill: #fff;
 }
 
+.slick-track{
+  direction: ltr;
+}
+
+.slick-next{
+  right: 2rem !important;
+  position: absolute !important;
+  z-index: 999;
+  transform: scale(2);
+  background: #fff !important;
+  border-radius: 100%;
+}
+
+.slick-next:before {
+  color: #cd41a3 !important;
+}
+
+.slick-prev{
+  left: 2rem !important;
+  position: absolute !important;
+  z-index: 999;
+  transform: scale(2);
+  background: #fff;
+  border-radius: 100%;
+}
+
+.slick-prev:before {
+  color: #cd41a3 !important;
+}
+
 
 @media (max-width: 768px){
   .rules-tab li.active::before{
