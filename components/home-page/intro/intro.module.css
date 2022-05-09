@@ -23,8 +23,8 @@
 
 .intro .wrapper .dashedBorder__first{
     position: absolute;
-    width: 320px;
-    height: 320px;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
     border: 1.666667px dashed #E40F7E;
     box-sizing: border-box;
@@ -34,8 +34,8 @@
 
 .intro .wrapper .dashedBorder__second{
     position: absolute;
-    width: 360px;
-    height: 360px;
+    width: 220px;
+    height: 220px;
     border-radius: 50%;
     border: 1.466667px dashed rgba(228, 15, 126, 0.39);
 }
@@ -102,8 +102,8 @@
 
 .intro .wrapper .dashedBorder__third{
     position: absolute;
-    width: 415px;
-    height: 415px;
+    width: 275px;
+    height: 275px;
     border: 1.366667px dashed rgb(228 15 126 / 30%);
     box-sizing: border-box;
     border-radius: 50%;
@@ -175,16 +175,16 @@
         transform: scale(.6);
     }
     .intro .wrapper .dashedBorder__first{
-        width: 216px;
-        height: 216px;
+        width: 76px;
+        height: 76px;
     }
     .intro .wrapper .dashedBorder__second{
-        width: 279px;
-        height: 279px;
+        width: 139px;
+        height: 139px;
     }
     .intro .wrapper .dashedBorder__third{
-        width: 357px;
-        height: 357px;
+        width: 217px;
+        height: 217px;
     }
     .intro .wrapper .dashedBorder__second > div > a{
         padding: 12px;
