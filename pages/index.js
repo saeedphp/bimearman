@@ -19,7 +19,6 @@ const HomePage = () => {
             <Banner/>
             <Intro/>
             <Insurance/>
-            {/*<AllInsurance/>*/}
             <AllInsurances />
             <Blog/>
             <FloatingMenu />
