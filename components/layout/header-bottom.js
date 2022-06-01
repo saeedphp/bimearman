@@ -48,6 +48,18 @@ const HeaderBottom = () => {
                             </span>
                     <HeaderArrow />
                 </div>
+                <ul className={styles['e-menu']}>
+                    <li>
+                        <a href="https://e.armanins.com/BimeSiteMvc/Car/SalesNerkhEstelam/Index">
+                            استعلام نرخ ثالث
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://e.armanins.com/BimeSiteMvc/Car/SalesNerkhEstelam/Index">
+                            استعلام نرخ بدنه
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     )

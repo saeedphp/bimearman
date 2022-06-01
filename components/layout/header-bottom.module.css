@@ -88,9 +88,11 @@
 }
 
 .header-bottom .service{
-    width: 20%;
+    width: 14%;
     display: flex;
     justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
 }
 
 .header-bottom .service .card{
@@ -114,6 +116,31 @@
 
 .mobile-menu{
     display: none;
+}
+
+.e-menu{
+    opacity: 0;
+    transform: translateY(5rem);
+    position: absolute;
+    bottom: 0;
+    background: #fff;
+    padding: 0 .5rem;
+    border-radius: .5rem;
+    width: 100%;
+}
+
+.e-menu li{
+    margin: 0.7rem 0;
+}
+
+.e-menu li a{
+    font-size: .8rem;
+}
+
+.service:hover .e-menu{
+    opacity: 1 !important;
+    transform: translateY(5rem);
+    bottom: -0.5rem;
 }
 
 @media (max-width: 768px) {
