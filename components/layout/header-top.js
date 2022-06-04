@@ -24,7 +24,9 @@ const HeaderTop = () => {
             </div>
             <div className={`row ${styles.item} ${styles.btnLogin}`}>
                 <div className={styles.search}>
-                    <Phone />
+                    <a className={styles.tel} href="tel:0212856">
+                        <Phone />
+                    </a>
                 </div>
                 <div className={styles.search}>
                     <HeaderSearch />

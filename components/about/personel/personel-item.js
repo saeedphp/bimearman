@@ -32,7 +32,7 @@ const PersonelItem = () => {
                                             <i></i>
                                             شماره تماس : {values.tel} داخلی {values.inner}
                                         </a>
-                                        <a className={styles.mail}>
+                                        <a href={`mailto: ${values.mail}`} className={styles.mail}>
                                             <i></i>
                                             {values.mail}
                                         </a>

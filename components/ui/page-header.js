@@ -77,7 +77,7 @@ const PageHeader = ({title,bg,pageTitle,pageLink}) => {
                 <h2 className={styles.title}>
                     {title}
                 </h2>
-                <Image src={bg} alt={title} layout={"fill"} />
+                {/*<Image src={bg} alt={title} layout={"fill"} />*/}
             </div>
         </>
     )

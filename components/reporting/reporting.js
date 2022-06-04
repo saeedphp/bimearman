@@ -18,9 +18,9 @@ const Reporting = () => {
           <PageHeader title="گزارشگری و افشای اطلاعات" pageTitle="" pageLink="/reporting" bg={bgHeader} />
           <section className={styles.reporting}>
               <ReportItem />
-              <ReportRisk />
+              {/*<ReportRisk />
               <FinancialReport />
-              <BranchReport />
+              <BranchReport />*/}
           </section>
       </Fragment>
     );

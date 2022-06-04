@@ -28,7 +28,47 @@ const DUMMY_DATA = [
         children: [
             {
                 id: 'm2-1',
-                link: 'products/insurance',
+                link: 'product/p1',
+                title: 'بیمه آتش سوزی',
+            },
+            {
+                id: 'm2-2',
+                link: 'product/p2',
+                title: 'بیمه مسئولیت',
+            },
+            {
+                id: 'm2-3',
+                link: 'product/p3',
+                title: 'بیمه عمر سرمایه گذاری',
+            },
+            {
+                id: 'm2-4',
+                link: 'product/p4',
+                title: 'بیمه مهندسی',
+            },
+            {
+                id: 'm2-5',
+                link: 'product/p5',
+                title: 'بیمه خودرو',
+            },
+            {
+                id: 'm2-6',
+                link: 'product/p6',
+                title: 'بیمه های خاص',
+            },
+            {
+                id: 'm2-7',
+                link: 'product/p7',
+                title: 'بیمه انرژی',
+            },
+            {
+                id: 'm2-8',
+                link: 'product/p8',
+                title: 'بیمه کشتی و هواپیما',
+            },
+            {
+                id: 'm2-9',
+                link: 'product/p9',
                 title: 'بیمه اشخاص',
             },
         ]

@@ -14,7 +14,7 @@ const Insurance = () => {
 
     const productData = getALlProduct();
 
-    const [toggle, setToggle] = useState(1);
+    const [toggle, setToggle] = useState(0);
 
     const toggleTab = (index) => {
         setToggle(index);
@@ -31,27 +31,29 @@ const Insurance = () => {
                     <div className={styles.tab}>
                         <nav>
                             <ul className={`productItem`}>
-                                {productData.map((data) => (
-                                    <li key={data.id} className={toggle === data.id ? 'active' : null} onClick={() => {
-                                        toggleTab(data.id)
+                                {productData.map((data,i) => (
+                                    <li key={data.id} className={toggle === i ? 'active' : null} onClick={() => {
+                                        toggleTab(i)
                                     }}>
                                         <span>
                                             {data.icon}
                                         </span>
-                                        {data.tabTitle}
+                                        <a href={`#${i}`}>
+                                            {data.tabTitle}
+                                        </a>
                                     </li>
                                 ))}
                             </ul>
                         </nav>
-                        <Image src={imgPath} alt="image" layout={"fill"} />
+                        {/*<Image src={imgPath} alt="image" layout={"fill"} />*/}
                     </div>
                     <div className={`${styles.info}`}>
                         <Card>
                             <ul>
-                                {productData.map((data) => (
-                                    <Fragment key={data.id}>
-                                        {toggle === data.id ? (
-                                            <li>
+                                {productData.map((data,i) => (
+                                    <Fragment key={i}>
+                                        {toggle === i ? (
+                                            <li id={i}>
                                                 {data.contentTitle !== '' ?
                                                     <Title className={styles.title}>
                                                         {data.contentTitle}

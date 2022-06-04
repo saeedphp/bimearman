@@ -1,5 +1,8 @@
 .page-header{
     position: relative;
+    background: url(../../public/images/page-header.webp) no-repeat bottom;
+    height: 350px;
+    background-size: cover;
 }
 
 .title{
@@ -32,6 +35,9 @@
 }
 
 @media (max-width: 768px) {
+    .page-header{
+        height: 200px;
+    }
     .title{
         margin: 0;
         font-size: .8rem;

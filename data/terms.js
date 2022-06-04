@@ -2,22 +2,22 @@ const DUMMY_DATA = [
     {
         id: 't1',
         title: 'فرم درخواست ثبت نام داوطلب عضویت هیأت مدیره',
-        link: '#',
+        link: '/files/brochure.pdf',
     },
     {
         id: 't2',
         title: 'اساسنامه شرکت بیمه آرمان',
-        link: '#',
+        link: '/files/brochure.pdf',
     },
     {
         id: 't3',
         title: 'فرم معرفی داوطلب هیأت مدیره',
-        link: '#',
+        link: '/files/brochure.pdf',
     },
     {
         id: 't4',
         title: 'فرم رسید تحویل مدارک',
-        link: '#',
+        link: '/files/brochure.pdf',
     },
 ];
 

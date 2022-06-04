@@ -5,7 +5,7 @@ const Title = (props) => {
     const classes = ' ' + props.className;
 
     return (
-        <h2 className={styles.title + classes}>
+        <h2 onClick={props.onClick} className={styles.title + classes}>
             {props.children}
         </h2>
     )

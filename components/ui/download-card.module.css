@@ -1,7 +1,7 @@
 .wrapper{
     background: #6F2A82;
     backdrop-filter: blur(14.0509px);
-    width: 100%;
+    width: 90%;
     border-radius: 32px;
     position: relative;
     z-index: 1;
@@ -74,6 +74,9 @@
  }
 
  @media (max-width: 768px) {
+     .wrapper{
+         margin: 0 1rem 2rem;
+     }
      .purpleBg{
          width: 100%;
      }
@@ -81,3 +84,9 @@
          font-size: .7rem;
      }
  }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .purpleBg h3{
+        font-size: .8rem;
+    }
+}

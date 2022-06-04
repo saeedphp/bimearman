@@ -16,22 +16,22 @@ const Intro = () => {
                     </div>
                     <div className={styles['dashedBorder__second']}>
                         <div className={styles.first}>
-                            <Button link="/">
+                            <Button link="/customerservice/damagebranch">
                                 مراکز پرداخت خسارت
                             </Button>
                         </div>
                         <div className={styles.second}>
-                            <Button link="/">
+                            <Button link="/customerservice/healthcenter">
                                 مشاهده مراکز درمانی
                             </Button>
                         </div>
                         <div className={styles.third}>
-                            <Button link="/">
+                            <Button link="/salesnetwork/branch">
                                 مشاهده شعب و نمایندگی
                             </Button>
                         </div>
                         <div className={styles.fourth}>
-                            <Button link="/">
+                            <Button link="/customerservice/suggestions">
                                 پیشهادات و انتقادات
                             </Button>
                         </div>

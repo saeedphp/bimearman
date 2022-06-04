@@ -1,4 +1,4 @@
-import {Fragment} from "react";
+import {Fragment, useState} from "react";
 import PageHeader from "../../ui/page-header";
 import styles from './branch.module.css';
 import Cities from "./cities";
@@ -6,10 +6,53 @@ import {allBranches} from "../../../data/branch";
 import Link from "next/link";
 import {NextSeo} from "next-seo";
 import imgPath from "../../../public/images/page-header.webp";
+import IranMap from "../iran-map/IranMap";
+import iranProvinces from "../../../data/iranProvinces";
 
 const Branch = () => {
 
     const branches = allBranches();
+
+    const [showData, setShowData] = useState(true);
+    const ShowAll = () => setShowData(true);
+    const ShowFun = () => setShowData(false);
+
+    const [showCity, setShowCity] = useState(true);
+    const ShowShahr = () => setShowCity(true);
+    const HideShahr = () => setShowCity(false);
+
+    const [provinces] = useState(() => iranProvinces);
+
+    const [citys, setCitys] = useState();
+
+    const Sitecity = (e) => {
+        setCitys(e.target.value);
+        const [filteredSite] = provinces.filter((item) => item.name === e.target.value);
+        setCurrentSite(filteredSite.sites);
+    }
+
+    const [currentSite, setCurrentSite] = useState([
+        {
+            id: 'sit20',
+            name: 'Vardavrd ( 812 M )',
+            flys: 40,
+        },
+        {
+            id: 'sit21',
+            name: 'Shahran ( peak ) ( 755 M )',
+            flys: 50,
+        },
+        {
+            id: 'sit22',
+            name: 'Emamzadeh Hashem ( Damavand ) ( 442 M )',
+            flys: 70,
+        },
+        {
+            id: 'sit23',
+            name: 'Shirvan ( 812 M )',
+            flys: 35,
+        },
+    ]);
 
     return (
         <Fragment>
@@ -26,7 +69,7 @@ const Branch = () => {
                         <Cities items={branches} />
                     </div>
                     <div className={styles.map}>
-                        <div>
+                        {/*<div>
                             <svg id="map" x="0px" y="0px" viewBox="0 0 500 500">
                                 <Link href="#" passHref>
                                     <a title="آذربایجان غربی">
@@ -403,6 +446,13 @@ const Branch = () => {
                                     </a>
                                 </Link>
                             </svg>
+                        </div>*/}
+                        <div className={styles.boxmap}>
+                            <IranMap
+                                HideShahr={HideShahr}
+                                setCitys={setCitys}
+                                setCurrentSite={setCurrentSite}
+                            />
                         </div>
                     </div>
                 </div>

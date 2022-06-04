@@ -2,27 +2,22 @@ const DUMMY_DATA = [
     {
         id: 'q1',
         title: 'شبکه فروش',
-        link: '',
+        link: 'https://e.armanins.com/BimeSiteMVC/Common/locationlist/Index',
     },
     {
         id: 'q2',
         title: 'فرم درخواست نمایندگی',
-        link: '',
+        link: 'salesnetwork/representation',
     },
     {
         id: 'q3',
         title: 'فرم انتقادات و پیشنهادات',
-        link: '',
+        link: 'customerservice/suggestions',
     },
     {
         id: 'q4',
-        title: 'فرم ارزیابی رضایت مشتریان',
-        link: '',
-    },
-    {
-        id: 'q5',
-        title: 'فرم نظرسنجی',
-        link: '',
+        title: 'پست الکترونیک',
+        link: 'https://mymail.armanins.com/',
     },
 ];
 

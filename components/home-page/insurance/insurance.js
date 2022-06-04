@@ -11,14 +11,16 @@ const Insurance = () => {
     return (
         <section className={styles.insurance}>
             <div className={styles['insurance__image']}>
-                <Image src={imgPath} alt="insurance image" layout={"fill"} />
+                <Image src={imgPath} alt="insurance image" layout={"fill"}/>
             </div>
             <div className={styles['insurance__info']}>
                 <h2 className={styles.title}>
                     صدور بیمه نامه های آنلاین
                 </h2>
                 <p>
-                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم  است  برای شرایط فعلی تکنولوژی مورد نیاز و کاربرد های متنوع با هدف بهبود ابزارهای  کاربردی می باشد.
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربرد های متنوع با هدف بهبود ابزارهای کاربردی می باشد.
                 </p>
                 <ul>
                     {allInsurances.map((allInsurance) => (
@@ -27,9 +29,11 @@ const Insurance = () => {
                         </li>
                     ))}
                 </ul>
-                <Button link="/">
-                    مشاهده تمامی خدمات
-                </Button>
+                <a href="https://bime24.com">
+                    <Button>
+                        مشاهده تمامی خدمات
+                    </Button>
+                </a>
             </div>
         </section>
     );

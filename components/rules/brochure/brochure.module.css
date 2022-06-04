@@ -12,6 +12,8 @@
     width: 100%;
     flex-wrap: wrap;
     position: relative;
+    max-width: 70rem;
+    margin: 0 auto;
 }
 
 .brochure .wrapper::before{
@@ -30,6 +32,9 @@
 @media (max-width: 768px) {
     .brochure{
         padding: 1rem .5rem;
+    }
+    .brochure .wrapper{
+        max-width: 100%;
     }
     .brochure .wrapper::before{
         top: .5rem;

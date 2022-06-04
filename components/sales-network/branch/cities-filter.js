@@ -6,11 +6,11 @@ import ArrowDown from "../../icons/arrow-down";
 
 const CitiesFilter = (props) => {
 
-    /*const [selected, setSelected] = useState('تهران');*/
+    const [selected, setSelected] = useState('تهران');
 
     const dropdownChangeHandler = (event) => {
         props.onChangeFilter(event.target.value);
-        /*setSelected(selected);*/
+        setSelected(selected);
     };
 
     const cityList = allCities();
@@ -29,12 +29,12 @@ const CitiesFilter = (props) => {
                         </option>
                     ))}
                 </select>
-                {/*<span data-value={selected}>
+                {/*<span>
                     {selected}
                 </span>
-                <ul data-value={selected} onChange={dropdownChangeHandler}>
+                <ul>
                     {cityList.map((city) => (
-                        <li data-value={city.city} key={city.id} onClick={() => setSelected(city.city)} >
+                        <li value={city.city} key={city.id} onClick={() => setSelected(city.city)} >
                             {city.city}
                         </li>
                     ))}

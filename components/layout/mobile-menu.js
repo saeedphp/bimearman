@@ -34,6 +34,9 @@ const HamburMenu = () => {
         <div className={styles.menu}>
             <div>
                 <HamburIcon onClick={showSidebar}/>
+                <div className={showMenu ? 'overlay active' : 'overlay'} onClick={showSidebar}>
+
+                </div>
             </div>
             <nav className={showMenu ? 'nav active' : 'nav'}>
                 <ul>
@@ -42,9 +45,11 @@ const HamburMenu = () => {
                     </li>
                     {menuItems.map((menuItem) => (
                         <li key={menuItem.id}>
-                            <Link href={`/${menuItem.link}`}>
+                            <Link href={menuItem.link !== '' ? `/${menuItem.link}` : ''}>
                                 <a onClick={() => {toggle(menuItem.id)}}>
-                                    {menuItem.title}
+                                    <span onClick={menuItem.link !== '' ? showSidebar : null}>
+                                        {menuItem.title}
+                                    </span>
                                     {menuItem.children ? <span className={`${opened === (menuItem.id) ? 'arrow active' : 'arrow'}`}><MenuArrow /></span> : null}
                                 </a>
                             </Link>

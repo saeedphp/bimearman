@@ -5,6 +5,7 @@ body {
   direction: rtl;
   text-align: right;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @font-face {
@@ -16,9 +17,9 @@ body {
   url(../public/font/woff2/PinkSans.woff2) format('woff2');
 }
 
-body *, body :after, body :before, body :hover {
+/*body *, body :after, body :before, body :hover {
   transition: .4s;
-}
+}*/
 
 a,p,span,button,li,label,address,h1,h2,h3,h4,h5,h6,time,input,textarea,select,option{
   font-family: IRANSans;
@@ -138,6 +139,41 @@ header ul > li > a.has-children::before{
   width: 10%;
 }
 
+/*form validation error*/
+
+#myform input.error{
+  border-color: rgba(248, 0, 0, 0.58) !important;
+}
+
+#myform input.success{
+  border-color: rgba(94, 232, 48, 0.58) !important;
+  text-align: right;
+}
+
+#myform textarea.error{
+  border-color: rgba(248, 0, 0, 0.58) !important;
+}
+
+#myform textarea.success{
+  border-color: rgba(94, 232, 48, 0.58) !important;
+  text-align: right;
+}
+
+.success{
+  border: 1px solid green;
+  text-align: center;
+  border-radius: 2rem;
+  padding: 0;
+}
+
+.success p{
+  color: green;
+}
+
+/*form validation error*/
+
+
+
 /*defined classes*/
 
 .nav{
@@ -151,7 +187,7 @@ header ul > li > a.has-children::before{
   top: 0;
   right: -100%;
   transition: 850ms;
-  z-index: 6;
+  z-index: 99999999;
   box-shadow: 4px 6px 15px #585454;
 }
 
@@ -170,9 +206,6 @@ header ul > li > a.has-children::before{
   overflow: hidden;
   max-height: 0 !important;
   transition: all .5s;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .submenu li a{
@@ -227,7 +260,7 @@ address{
 }
 
 .faq-answer.active{
-  max-height: 300px !important;
+  max-height: fit-content !important;
 }
 
 .rules-tab li.active{
@@ -534,6 +567,54 @@ input[type=radio]{
   color: #cd41a3 !important;
 }
 
+.overlay{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.report_desc{
+  max-height: 0;
+  overflow: hidden;
+  transition: all .4s ease;
+}
+
+.report_desc.active{
+  max-height: 1000px !important;
+}
+
+.personel_item.active{
+  background: #F6F7FB;
+  border: 1px solid #F0F1F6;
+  border-radius: 8px;
+}
+
+.personel_item.active a{
+  color: #6D3177;
+}
+
+.personel_container{
+  max-height: 0;
+  overflow: hidden;
+}
+
+.personel_container.active{
+  max-height: fit-content !important;
+}
+.categories li.active{
+  border-bottom: 2px solid #6F2A82 !important;
+}
 
 @media (max-width: 768px){
   .rules-tab li.active::before{

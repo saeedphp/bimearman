@@ -8,6 +8,7 @@ const Sidebar = () => {
 
     const sidebarBlogs = getAllEvents();
 
+
     return (
         <div className={styles.sidebar}>
             <div className={styles.wrapper}>
@@ -22,7 +23,7 @@ const Sidebar = () => {
                                     <Image src={`/${sidebarBlog.image}`} alt={sidebarBlog.title} layout={"fill"} />
                                 </div>
                                 <div className={styles.info}>
-                                    <Link href={sidebarBlog.id}>
+                                    <Link href={`blog/${sidebarBlog.id}`}>
                                         <a className={styles.title}>
                                             {sidebarBlog.title}
                                         </a>
@@ -54,7 +55,7 @@ const Sidebar = () => {
                                     <Image src={`/${sidebarBlog.image}`} alt={sidebarBlog.title} layout={"fill"} />
                                 </div>
                                 <div className={styles.info}>
-                                    <Link href={sidebarBlog.id}>
+                                    <Link href={`blog/${sidebarBlog.id}`}>
                                         <a className={styles.title}>
                                             {sidebarBlog.title}
                                         </a>

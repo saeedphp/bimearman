@@ -2,7 +2,7 @@ const DUMMY_DATA = [
     {
         id: 'r1',
         title: 'قوانین اختصاصی',
-        link: '',
+        link: '/salesnetwork/rules',
     },
     {
         id: 'r2',

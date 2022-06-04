@@ -2,27 +2,27 @@ const DUMMY_DATA = [
     {
         id: 's1',
         title: 'بیمه مهندسی',
-        link: '',
+        link: 'product/p4',
     },
     {
         id: 's2',
         title: 'بیمه اشخاص',
-        link: '',
+        link: 'product/p9',
     },
     {
         id: 's3',
         title: 'بیمه خودرو',
-        link: '',
+        link: 'product/p5',
     },
     {
         id: 's4',
         title: 'بیمه عمر سرمایه گذاری',
-        link: '',
+        link: 'product/p3',
     },
     {
         id: 's5',
         title: 'بیمه مسئولیت',
-        link: '',
+        link: 'product/p2',
     },
 ];
 

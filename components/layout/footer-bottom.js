@@ -8,17 +8,17 @@ const FooterBottom = () => {
         <div className={styles['footer-bottom']}>
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="https://www.armanins.com/contact/instagram.com/armaninsurance">
                         <SocialLinkdin />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.armanins.com/contact/instagram.com/armaninsurance">
                         <SocialTelegram />
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://www.armanins.com/contact/instagram.com/armaninsurance">
                         <SocialInsta />
                     </a>
                 </li>

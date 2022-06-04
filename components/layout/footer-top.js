@@ -46,7 +46,7 @@ const FooterTop = () => {
                     <ul>
                         {accessItems.map((accessItem) => (
                             <li key={accessItem.id}>
-                                <Link href={`/${accessItem.link}`}>
+                                <Link href={`${accessItem.link}`}>
                                     <a>
                                         {accessItem.title}
                                     </a>
