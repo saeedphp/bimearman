@@ -7,12 +7,12 @@ const DUMMY_DATA = [
     {
         id: 'q2',
         title: 'فرم درخواست نمایندگی',
-        link: 'salesnetwork/representation',
+        link: '/salesnetwork/representation',
     },
     {
         id: 'q3',
         title: 'فرم انتقادات و پیشنهادات',
-        link: 'customerservice/suggestions',
+        link: '/customerservice/suggestions',
     },
     {
         id: 'q4',

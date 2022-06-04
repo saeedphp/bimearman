@@ -18,7 +18,7 @@ const Terms = () => {
             <NextSeo title="شرایط عضویت در هیئت مدیره">
 
             </NextSeo>
-            <PageHeader title="شرایط عضویت در هیئت مدیره" pageTitle="قوانین و مقررات" pageLink="/rules" bg={bgHeader} />
+            <PageHeader title="شرایط عضویت در هیئت مدیره" pageTitle="قوانین و مقررات" pageLink="" bg={bgHeader} />
             <section className={styles.terms}>
                 <Card>
                     <Title>

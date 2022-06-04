@@ -20,7 +20,7 @@ const Representation = () => {
             <NextSeo title="اخذ نمایندگی">
 
             </NextSeo>
-            <PageHeader title="اخذ نمایندگی" pageTitle="شبکه فروش" pageLink="/salesnetwork" bg={imgPath}/>
+            <PageHeader title="اخذ نمایندگی" pageTitle="شبکه فروش" pageLink="" bg={imgPath}/>
             <Card className={styles.representation}>
                 <nav className="rules-tab">
                     <ul>

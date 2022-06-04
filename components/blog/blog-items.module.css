@@ -22,6 +22,7 @@
     padding: 0 1rem 1rem;
     border-bottom: 2px solid #ccc;
     position: relative;
+    cursor: pointer;
 }
 
 .card .filter ul li:hover::after {

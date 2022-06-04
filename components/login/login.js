@@ -24,7 +24,6 @@ const Login = () => {
             <NextSeo title="ورود">
 
             </NextSeo>
-            <PageHeader title="ورود" pageTitle="" pageLink="#" bg={imgPath}/>
             <section className={styles.login}>
                 <Card className={styles.card}>
                     <h2 className={styles.title}>

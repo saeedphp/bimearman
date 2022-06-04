@@ -11,13 +11,13 @@ const DUMMY_DATA = [
     },
     {
         id: 'r3',
-        title: 'مصوبات شورای عالی',
-        link: '',
+        title: 'استعلام بیمه نامه از بیمه مرکزی',
+        link: '/insuranceinquiry',
     },
     {
         id: 'r4',
         title: 'دستورالعمل های اجرایی',
-        link: '',
+        link: 'https://e.armanins.com/BimeSiteMVC/Common/locationlist/Index',
     },
 ];
 

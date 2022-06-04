@@ -62,7 +62,7 @@ const FooterTop = () => {
                     <ul>
                         {serviceItems.map((serviceItem) => (
                             <li key={serviceItem.id}>
-                                <Link href={`/${serviceItem.link}`}>
+                                <Link href={`${serviceItem.link}`}>
                                     <a>
                                         {serviceItem.title}
                                     </a>
@@ -78,7 +78,7 @@ const FooterTop = () => {
                     <ul>
                         {ruleItems.map((ruleItem) => (
                             <li key={ruleItem.id}>
-                                <Link href={`/${ruleItem.link}`}>
+                                <Link href={`${ruleItem.link}`}>
                                     <a>
                                         {ruleItem.title}
                                     </a>

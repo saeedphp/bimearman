@@ -18,7 +18,7 @@ const GeneralConditions = () => {
             <NextSeo title="شرایط عمومی بیمه نامه">
 
             </NextSeo>
-            <PageHeader title="شرایط عمومی بیمه نامه" pageTitle="قوانین و مقررات" pageLink="/rules" bg={bgHeader} />
+            <PageHeader title="شرایط عمومی بیمه نامه" pageTitle="قوانین و مقررات" pageLink="" bg={bgHeader} />
             <Card className={styles.conditions}>
                 <Title>
                     آیین نامه شماره ۷۷

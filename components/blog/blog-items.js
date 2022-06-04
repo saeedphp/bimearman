@@ -55,7 +55,7 @@ const BlogItems = () => {
                             <li className={category === "all" ? 'active' : null} onClick={() => setCategory("all")}>
                                 همه
                             </li>
-                            {categories.map((c, i) => {
+                            {categories.slice(0,4).map((c, i) => {
                                 return (
                                     <li className={category === c ? 'active' : ''} key={i} onClick={() => setCategory(c)}>
                                         {c}

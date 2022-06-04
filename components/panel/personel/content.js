@@ -38,7 +38,7 @@ const Content = () => {
                                 <li key={i} className={`personel_item ${toggle === i ? 'active' : null}`} onClick={() => {
                                     toggleTab(i)
                                 }}>
-                                    <a>
+                                    <a href={`#${item.title}`}>
                                 <span>
                                     <News/>
                                 </span>
@@ -80,7 +80,7 @@ const Content = () => {
 
                     <div className={styles.body}>
                         {personelData.map((data,i) => (
-                            <div className={`personel_container ${toggle === i ? 'active' : null}`} key={i}>
+                            <div id={data.title} className={`personel_container ${toggle === i ? 'active' : null}`} key={i}>
                                 {data.fields.filter((item) => {
                                     return (
                                         item.title.includes(inputText)

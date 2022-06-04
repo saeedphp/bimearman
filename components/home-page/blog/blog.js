@@ -18,6 +18,9 @@ const Blog = () => {
 
     const allBlogs = getAllEvents();
 
+    const [category, setCategory] = useState("all");
+    const categories = Array.from(new Set(allBlogs.map((b) => b.category)));
+
     /*get Roydad category posts*/
     const events = getEvents();
 
@@ -31,62 +34,51 @@ const Blog = () => {
                 <h2 className={styles.title}>
                     اخبار و رویداد ها
                 </h2>
-                <ul>
-                    <li className={toggle === 1 ? styles['tab-active'] : styles.tab} onClick={() => {toggleTab(1)}}>
+                <ul className="categories">
+                    <li className={category === "all" ? 'active' : null} onClick={() => setCategory("all")}>
                         همه
                     </li>
-                    <li className={toggle === 2 ? styles['tab-active'] : styles.tab} onClick={() => {toggleTab(2)}}>
-                        رویداد های آرمان
-                    </li>
-                    <li className={toggle === 3 ? styles['tab-active'] : styles.tab} onClick={() => {toggleTab(3)}}>
-                        اقتصاد و دارایی
-                    </li>
+                    {categories.slice(0,4).map((c, i) => {
+                        return (
+                            <li className={category === c ? 'active' : ''} key={i} onClick={() => setCategory(c)}>
+                                {c}
+                            </li>
+                        )
+                    })}
+
                 </ul>
             </div>
 
             <div className={toggle === 1 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {allBlogs.slice(0,4).map((allBlog) => (
-                    <BlogItem
-                        key={allBlog.id}
-                        id={allBlog.id}
-                        title={allBlog.title}
-                        description={allBlog.description}
-                        category={allBlog.category}
-                        image={allBlog.image}
-                        date={allBlog.date}
-                        link={allBlog.link}
-                    />
-                ))}
-            </div>
-
-            <div className={toggle === 2 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {events.slice(0,4).map((event) => (
-                    <BlogItem
-                        key={event.id}
-                        id={event.id}
-                        title={event.title}
-                        description={event.description}
-                        category={event.category}
-                        image={event.image}
-                        date={event.date}
-                        link={event.link}
-                    />
-                ))}
-            </div>
-
-            <div className={toggle === 3 ? styles['blog-posts__active'] : styles['blog-posts']}>
-                {news.slice(0,4).map((item) => (
-                    <BlogItem
-                        key={item.id}
-                        id={item.id}
-                        title={item.title}
-                        description={item.description}
-                        category={item.category}
-                        image={item.image}
-                        date={item.date}
-                        link={item.link}
-                    />
-                ))}
+                {allBlogs.slice(0,4).map((allBlog, i) => {
+                    if (category == "all"){
+                        return (
+                            <BlogItem
+                                key={allBlog.id}
+                                id={allBlog.id}
+                                title={allBlog.title}
+                                description={allBlog.description}
+                                category={allBlog.category}
+                                image={allBlog.image}
+                                date={allBlog.date}
+                                link={allBlog.link}
+                            />
+                        )
+                    }else if (allBlog.category === category){
+                        return (
+                            <BlogItem
+                                key={allBlog.id}
+                                id={allBlog.id}
+                                title={allBlog.title}
+                                description={allBlog.description}
+                                category={allBlog.category}
+                                image={allBlog.image}
+                                date={allBlog.date}
+                                link={allBlog.link}
+                            />
+                        )
+                    }
+                })}
             </div>
 
         </section>

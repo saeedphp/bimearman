@@ -3,6 +3,7 @@ import styles from './content.module.css';
 import PanelDownload from "../../ui/panel-download";
 import News from "../../icons/panel/personel/news";
 import Image from "next/image";
+import Link from "next/link";
 import mockup from "../../../public/images/panel/panel-mockup.png";
 import {getAllPersonelData} from "../../../data/personel-panel";
 import Card from "../../ui/card";
@@ -35,11 +36,21 @@ const Content = () => {
                 <div className={styles.panel}>
                     <nav>
                         <ul>
+                            <li>
+                                <Link href="/panel/renewagentlicense">
+                                    <a>
+                                        <span>
+                                    <News/>
+                                </span>
+                                        تمدید نمایندگی
+                                    </a>
+                                </Link>
+                            </li>
                             {personelData.map((item, i) => (
                                 <li key={i} className={`personel_item ${toggle === i ? 'active' : null}`} onClick={() => {
                                     toggleTab(i)
                                 }}>
-                                    <a>
+                                    <a href={`#${item.title}`}>
                                 <span>
                                     <News/>
                                 </span>
@@ -81,7 +92,7 @@ const Content = () => {
 
                     <div className={styles.body}>
                         {personelData.map((data,i) => (
-                            <div className={`personel_container ${toggle === i ? 'active' : null}`} key={i}>
+                            <div id={data.title} className={`personel_container ${toggle === i ? 'active' : null}`} key={i}>
                                 {data.fields.filter((item) => {
                                     return (
                                         item.title.includes(inputText)

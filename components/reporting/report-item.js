@@ -142,9 +142,11 @@ const ReportItem = () => {
                                             return (
                                                 <li key={i} className={styles.items}>
                                                     <div className={styles.tab}>
-                                  <span>
+                                                        <a href={item.file}>
+                                                            <span>
                                       <i></i>
                                   </span>
+                                                        </a>
                                                         <Card className={styles.txt}>
                                                             <a href={item.file}>
                                                                 {item.txt}

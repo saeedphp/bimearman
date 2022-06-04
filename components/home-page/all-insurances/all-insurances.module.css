@@ -86,6 +86,7 @@
     background: url('../../../public/images/inner-arc.png') no-repeat;
     width: 120px;
     height: 120px;
+    transition: all .4s ease-in-out;
 }
 
 .insurance .iconBg::after{
@@ -97,6 +98,7 @@
     background: url('../../../public/images/outer-arc.png') no-repeat;
     width: 154px;
     height: 152px;
+    transition: all .4s ease-in-out;
 }
 
 .insurance .iconBg:hover::after{

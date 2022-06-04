@@ -27,7 +27,7 @@ const Branch = (props) => {
             <NextSeo title="مراکز درمانی">
 
             </NextSeo>
-            <PageHeader title="مراکز درمانی" pageTitle="امور مشتریان" pageLink="/customerservice" bg={imgPath}/>
+            <PageHeader title="مراکز درمانی" pageTitle="امور مشتریان" pageLink="" bg={imgPath}/>
             <div className={styles.map}>
                 <div>
                     <svg id="map" x="0px" y="0px" viewBox="0 0 500 500">

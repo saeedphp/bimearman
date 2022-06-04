@@ -6,7 +6,6 @@ import Image from "next/image";
 import imgPath from '../../public/images/contact-img.webp';
 import Button from "../ui/button";
 import {useEffect, useState} from "react";
-import {ReCAPTCHA} from "react-google-recaptcha";
 
 const ContactForm = () => {
 
@@ -127,11 +126,7 @@ const ContactForm = () => {
 
                         </textarea>
                     </div>
-                    <ReCAPTCHA
-                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                        data-theme="dark"
-                        onChange={onChange}
-                    />
+
                     <div className={styles.controls}>
                         <Button>
                             ارسال پیام
